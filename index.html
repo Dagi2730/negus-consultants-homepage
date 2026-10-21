@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negus Consultants | International Education, Scholarships, SAT & IELTS in Ethiopia</title>
+  <meta name="description" content="Ethiopia's premier international education and scholarship consultancy. Master the Digital SAT, IELTS, and secure fully funded scholarships to top global universities.">
+  
+  <!-- Cache Control Meta Tags to ensure immediate refresh -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#10B981',       /* Light Green / Vibrant Emerald */
+              greenDark: '#059669',   /* Deep Emerald Accent */
+              greenDeep: '#064E3B',   /* High-Contrast Deep Green Text */
+              greenLight: '#34D399',  /* Bright Mint */
+              greenBg: '#F0FDF4',     /* Light Green soft background */
+              greenSurface: '#ECFDF5',/* Light Green tint */
+              yellow: '#F59E0B',      /* Warm Golden Yellow (Crown) */
+              yellowBright: '#FBBF24',/* Vibrant Sunshine Yellow */
+              yellowLight: '#FEF3C7', /* Soft Warm Yellow */
+              yellowDeep: '#78350F',  /* High-Contrast Deep Amber Text */
+              navyText: '#0F2E4A',    /* High-Contrast Deep Navy from Logo */
+              slateText: '#1E293B',   /* High-Contrast Slate-800 Body */
+              slateSub: '#334155'     /* High-Contrast Slate-700 Secondary */
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['ui-monospace', 'monospace']
+          },
+          animation: {
+            'plane-flight': 'planeFlight 16s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+            'cloud-drift-1': 'cloudDrift 28s linear infinite',
+            'cloud-drift-2': 'cloudDrift 42s linear infinite',
+            'cloud-drift-3': 'cloudDrift 35s linear infinite',
+            'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
+            'float-smooth': 'floatSmooth 4s ease-in-out infinite'
+          },
+          keyframes: {
+            planeFlight: {
+              '0%': { transform: 'translateX(-120px) translateY(40px) rotate(8deg)' },
+              '25%': { transform: 'translateX(350px) translateY(-15px) rotate(2deg)' },
+              '50%': { transform: 'translateX(800px) translateY(-35px) rotate(-2deg)' },
+              '75%': { transform: 'translateX(1200px) translateY(5px) rotate(4deg)' },
+              '100%': { transform: 'translateX(1650px) translateY(-20px) rotate(6deg)' }
+            },
+            cloudDrift: {
+              '0%': { transform: 'translateX(-200px)' },
+              '100%': { transform: 'translateX(1600px)' }
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.03)' }
+            },
+            floatSmooth: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F0FDF4;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #10B981;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #059669;
+    }
+
+    /* High-Contrast Card Styling */
+    .theme-card {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(16, 185, 129, 0.22);
+      box-shadow: 0 10px 25px -5px rgba(15, 46, 74, 0.05);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .theme-card:hover {
+      border-color: #10B981;
+      box-shadow: 0 18px 35px -8px rgba(16, 185, 129, 0.15);
+      transform: translateY(-4px);
+    }
+
+    /* Flight Path Animated Dashes */
+    .flight-trail-line {
+      stroke-dasharray: 8, 8;
+      animation: dashMove 2s linear infinite;
+    }
+    @keyframes dashMove {
+      from { stroke-dashoffset: 32; }
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+</head>
+<body class="bg-white text-brand-slateText font-sans antialiased selection:bg-brand-green selection:text-white relative min-h-screen overflow-x-hidden">
+
+  <!-- Simple, Neat Navbar (Clean Logo, Light Green, Yellow, White & Currency Toggle) -->
+  <header id="main-nav" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm transition-all duration-200">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- Official Logo uploaded by User (Crown + Book + Text) -->
+      <a href="#" class="flex items-center gap-3.5 group flex-shrink-0">
+        <img src="logo.png" onerror="this.onerror=null; this.src='negus_logo.png';" alt="Negus Consultants Official Logo" class="h-12 w-auto object-contain rounded-lg shadow-sm border border-emerald-100/60 p-0.5 bg-white transition-transform group-hover:scale-105">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="text-xl sm:text-2xl font-black tracking-tight text-brand-navyText leading-none">NEGUS</span>
+            <span class="w-2 h-2 rounded-full bg-brand-yellow"></span>
+          </div>
+          <span class="text-[9px] sm:text-[10px] font-extrabold tracking-[0.24em] text-brand-greenDark leading-none mt-1">CONSULTANTS</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-7 text-sm font-bold text-brand-slateText">
+        <a href="#hero-section" class="text-brand-greenDark font-black relative py-1 border-b-2 border-brand-green transition-colors">Home</a>
+        <a href="#training-section" class="hover:text-brand-greenDark transition-colors py-1">Training Areas</a>
+        <a href="#courses-section" class="hover:text-brand-greenDark transition-colors py-1">Course Store</a>
+        <a href="#pathway-finder" class="hover:text-brand-greenDark transition-colors py-1 flex items-center gap-1.5 text-brand-greenDark font-black">
+          <i data-lucide="compass" class="w-4 h-4 text-brand-green"></i>
+          <span>Scholarship Match</span>
+        </a>
+        <a href="#results-section" class="hover:text-brand-greenDark transition-colors py-1">Student Results</a>
+        <a href="#resources-section" class="hover:text-brand-greenDark transition-colors py-1">Free Content</a>
+        <a href="#about-section" class="hover:text-brand-greenDark transition-colors py-1">About</a>
+      </nav>
+
+      <!-- Right Side Actions: Currency Toggle + Action Buttons -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        
+        <!-- Currency Conversion Toggle (Clean Light Green & White styling) -->
+        <div class="flex items-center bg-emerald-50 p-1 rounded-full border border-emerald-200 text-xs font-bold shadow-inner">
+          <button id="curr-etb" onclick="setCurrency('ETB')" class="px-3 py-1 rounded-full font-black text-white bg-brand-greenDark transition-all shadow-sm">
+            ETB (ብር)
+          </button>
+          <button id="curr-usd" onclick="setCurrency('USD')" class="px-3 py-1 rounded-full text-brand-slateSub hover:text-brand-greenDark transition-all font-bold">
+            USD ($)
+          </button>
+        </div>
+
+        <!-- Login Button -->
+        <button onclick="openBookingModal('Navbar Login Action')" class="hidden sm:inline-block px-5 py-2 rounded-full font-extrabold text-xs text-brand-navyText bg-slate-100 hover:bg-emerald-50 hover:text-brand-greenDark transition-colors border border-slate-200">
+          Login
+        </button>
+
+        <!-- Book Consultation / Register Button -->
+        <button onclick="openBookingModal('Navbar Register Action')" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full font-black text-xs text-white bg-brand-green hover:bg-brand-greenDark shadow-md shadow-brand-green/20 hover:shadow-lg transition-all hover:scale-105 active:scale-95">
+          <span>Book Consultation</span>
+          <span class="w-2 h-2 rounded-full bg-brand-yellowBright animate-pulse"></span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded-lg text-brand-navyText hover:bg-emerald-50" aria-label="Toggle menu">
+          <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+          <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-emerald-100 px-6 py-5 shadow-lg">
+      <div class="flex flex-col gap-3">
+        <a href="#hero-section" onclick="toggleMobileMenu()" class="font-bold text-brand-green py-1">Home</a>
+        <a href="#training-section" onclick="toggleMobileMenu()" class="font-semibold text-brand-slateText hover:text-brand-green py-1">Training Areas</a>
+        <a href="#courses-section" onclick="toggleMobileMenu()" class="font-semibold text-brand-slateText hover:text-brand-green py-1">Course Store</a>
+        <a href="#pathway-finder" onclick="toggleMobileMenu()" class="font-semibold text-brand-green py-1 flex items-center justify-between">
+          <span>Scholarship Match (Pathway Finder)</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#results-section" onclick="toggleMobileMenu()" class="font-semibold text-brand-slateText hover:text-brand-green py-1">Student Results & Evidence</a>
+        <a href="#resources-section" onclick="toggleMobileMenu()" class="font-semibold text-brand-slateText hover:text-brand-green py-1">Free Educational Content</a>
+        <a href="#about-section" onclick="toggleMobileMenu()" class="font-semibold text-brand-slateText hover:text-brand-green py-1">About Negus</a>
+        
+        <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+          <button onclick="openBookingModal('Mobile Login'); toggleMobileMenu()" class="flex-1 py-2.5 rounded-full font-bold text-xs text-brand-navyText bg-slate-100">
+            Login
+          </button>
+          <button onclick="openBookingModal('Mobile Register'); toggleMobileMenu()" class="flex-1 py-2.5 rounded-full font-bold text-xs text-white bg-brand-green">
+            Book Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO SECTION: High-Contrast, Clean & Readable with Airplane Flight Animation -->
+  <section id="hero-section" class="relative min-h-[88vh] lg:min-h-[calc(100vh-80px)] w-full overflow-hidden bg-gradient-to-b from-[#F0FDF4] via-white to-[#F8FAF8] flex flex-col justify-between">
+    
+    <!-- ANIMATED AIRPLANE & CLOUDS BACKGROUND LAYER -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+      
+      <!-- Subtle Golden Sun Glow in Top Corner -->
+      <div class="absolute -top-24 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl"></div>
+      <div class="absolute top-10 left-10 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl"></div>
+
+      <!-- Drifting Soft Clouds (Simple, Clean, Atmospheric) -->
+      <div class="absolute top-12 left-0 animate-cloud-drift-1 opacity-70">
+        <svg width="180" height="60" viewBox="0 0 180 60" fill="white">
+          <path d="M20,45 Q10,45 10,35 Q10,25 22,25 Q28,10 48,15 Q65,5 82,18 Q98,8 115,20 Q130,12 145,22 Q160,18 165,30 Q175,32 170,45 Z" fill="#E2FBEA" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="absolute top-36 left-0 animate-cloud-drift-2 opacity-60">
+        <svg width="220" height="70" viewBox="0 0 220 70" fill="white">
+          <path d="M25,50 Q12,50 12,38 Q12,28 25,28 Q32,12 55,18 Q75,6 95,20 Q112,10 132,22 Q150,14 168,25 Q185,20 190,34 Q205,36 198,50 Z" fill="#FEF9C3" opacity="0.4"/>
+        </svg>
+      </div>
+
+      <div class="absolute top-24 left-0 animate-cloud-drift-3 opacity-50">
+        <svg width="150" height="50" viewBox="0 0 150 50" fill="white">
+          <path d="M15,40 Q8,40 8,30 Q8,20 20,20 Q25,8 42,12 Q58,4 72,15 Q85,8 100,18 Q115,12 125,20 Q135,18 138,28 Q145,30 140,40 Z" fill="#E2FBEA" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <!-- SOARING AIRPLANE WITH GOLDEN CONTRAIL ANIMATION -->
+      <div class="absolute top-16 left-0 animate-plane-flight z-10 flex items-center">
+        <!-- Golden Contrail Line -->
+        <svg width="180" height="40" viewBox="0 0 180 40" class="overflow-visible -mr-2">
+          <path d="M0,20 Q90,12 180,20" fill="none" stroke="#FBBF24" stroke-width="2.5" class="flight-trail-line" stroke-linecap="round"/>
+        </svg>
+        <!-- Sleek Modern Jet Airliner -->
+        <div class="relative drop-shadow-lg flex items-center">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <!-- Jet Body -->
+            <path d="M10,32 L26,30 L46,24 Q56,21 58,32 Q56,43 46,40 L26,34 L10,32 Z" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+            <!-- Main Wings -->
+            <polygon points="34,29 18,10 26,10 44,27" fill="#10B981" stroke="#059669" stroke-width="1.5"/>
+            <polygon points="34,35 18,54 26,54 44,37" fill="#059669" stroke="#047857" stroke-width="1.5"/>
+            <!-- Tail Fin (Golden Yellow matching crown) -->
+            <polygon points="14,31 4,16 10,16 20,31" fill="#F59E0B" stroke="#D97706" stroke-width="1.5"/>
+            <!-- Cockpit Windows -->
+            <path d="M50,29 Q54,32 50,35" stroke="#0F2E4A" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <!-- Floating Scholarship Destination Tag -->
+          <span class="ml-2 px-2.5 py-1 rounded-full bg-white/95 border-2 border-emerald-300 text-[10px] font-black text-brand-greenDeep shadow-md whitespace-nowrap">
+            ✈️ Flight to Global Full-Ride
+          </span>
+        </div>
+      </div>
+
+      <!-- Gentle Bottom Meadow Slope Gradient (Keeping colors light green, yellow & white) -->
+      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-emerald-50 via-emerald-50/40 to-transparent"></div>
+
+    </div>
+
+    <!-- Centered High-Contrast Hero Typography (Zero Visual Clutter Behind Text) -->
+    <div class="relative z-10 flex-1 flex items-center justify-center py-10 lg:py-16 text-center">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+        
+        <!-- Top Pill Badge (High-Contrast Yellow & Green) -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border-2 border-emerald-300 text-xs font-black text-brand-navyText shadow-sm mb-6">
+          <span class="text-brand-yellow font-black">👑</span>
+          <span class="tracking-wide">ETHIOPIA'S PREMIER SCHOLARSHIP ARCHITECT</span>
+          <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping"></span>
+        </div>
+
+        <!-- Main Headline (Deep Navy Text on Clean White Background = 100% Readability) -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-black leading-tight tracking-tight text-brand-navyText">
+          Your Future. <br>
+          <span class="text-brand-green">Without Borders.</span>
+        </h1>
+
+        <!-- Supporting Subtext (Slate-700 with optimal contrast and spacing) -->
+        <p class="mt-5 text-base sm:text-xl text-brand-slateSub max-w-2xl mx-auto font-medium leading-relaxed">
+          We consult Ethiopian students to unlock global opportunities through full-ride scholarships, Digital SAT mastery, and prestigious university placements.
+        </p>
+        
+        <p class="mt-2 text-base sm:text-lg font-black text-brand-greenDark">
+          Your dream, our precision guidance.
+        </p>
+
+        <!-- Clean Action Buttons (High Contrast: Yellow + White) -->
+        <div class="mt-8 flex flex-row flex-wrap items-center gap-4 justify-center">
+          <button onclick="openBookingModal('Hero Explore Opportunities')" class="group text-center bg-brand-yellow hover:bg-amber-400 text-brand-navyText font-black px-8 py-4 rounded-full shadow-lg shadow-amber-500/25 transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95 flex items-center gap-2">
+            <span>Explore Opportunities</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1 text-brand-navyText"></i>
+          </button>
+          
+          <button onclick="openBookingModal('Hero Book Consultation')" class="text-center bg-white hover:bg-emerald-50 text-brand-greenDark font-black px-8 py-4 rounded-full border-2 border-brand-green shadow-md transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95">
+            Book a Consultation
+          </button>
+        </div>
+
+        <!-- High-Contrast Proof Bar -->
+        <div class="mt-10 inline-flex flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 py-2.5 rounded-full bg-white border-2 border-emerald-200 text-xs font-extrabold text-brand-navyText shadow-sm">
+          <span class="flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-brand-greenDark"></i> 180+ Full-Rides</span>
+          <span class="text-emerald-200 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4 text-brand-greenDark"></i> 50+ Countries</span>
+          <span class="text-emerald-200 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow"></i> Bole Medhanialem Lab</span>
+          <span class="text-emerald-200 hidden sm:inline">•</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="wallet" class="w-4 h-4 text-brand-greenDark"></i> Telebirr & CBE</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Signature Stats Row (Crisp White Card on Soft Green) -->
+    <div class="relative z-10 px-6 lg:px-12 pb-6">
+      <div class="max-w-[1400px] mx-auto">
+        <div class="relative bg-white rounded-[24px] shadow-md border-2 border-emerald-100 px-6 sm:px-12 py-5">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-4">
+            
+            <div class="flex items-center gap-4 px-2 sm:px-6 border-slate-200 lg:border-l lg:first:border-l-0">
+              <p class="flex-shrink-0 text-3xl sm:text-4xl font-black text-brand-greenDark">5+ Yrs</p>
+              <p class="text-xs sm:text-sm text-brand-slateSub font-semibold">Mentoring Ethiopian students to global university success.</p>
+            </div>
+
+            <div class="flex items-center gap-4 px-2 sm:px-6 border-slate-200 lg:border-l">
+              <p class="flex-shrink-0 text-3xl sm:text-4xl font-black text-brand-yellowDeep">7K+</p>
+              <p class="text-xs sm:text-sm text-brand-slateSub font-semibold">Assisted over 7,000 scholars in achieving international goals.</p>
+            </div>
+
+            <div class="flex items-center gap-4 px-2 sm:px-6 border-slate-200 lg:border-l">
+              <p class="flex-shrink-0 text-3xl sm:text-4xl font-black text-brand-greenDark">180+</p>
+              <p class="text-xs sm:text-sm text-brand-slateSub font-semibold">Secured full-rides in USA, Europe, Canada & Middle East.</p>
+            </div>
+
+            <div class="flex items-center gap-4 px-2 sm:px-6 border-slate-200 lg:border-l">
+              <p class="flex-shrink-0 text-3xl sm:text-4xl font-black text-brand-yellowDeep">95%</p>
+              <p class="text-xs sm:text-sm text-brand-slateSub font-semibold">Maintained a 95% student admissions and visa approval rate.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- DUAL-AUDIENCE QUICK PATHWAY SELECTOR -->
+  <section class="py-10 bg-emerald-50/70 border-b border-emerald-100">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <div class="grid md:grid-cols-2 gap-4">
+        
+        <!-- Path A: For Beginners -->
+        <a href="#pathway-finder" class="group flex items-center justify-between p-5 rounded-2xl bg-white border-2 border-emerald-200 hover:border-brand-green shadow-sm hover:shadow-md transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-2xl text-brand-greenDark shadow-inner">
+              🧭
+            </div>
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-brand-greenDeep bg-emerald-100/70 px-2 py-0.5 rounded">NEW TO STUDY ABROAD?</span>
+              <h4 class="text-base font-extrabold text-brand-navyText mt-0.5">Find My Custom Scholarship Match</h4>
+              <p class="text-xs text-brand-slateSub font-medium">Take our 3-step interactive match to see your timeline and award potential</p>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-emerald-50 group-hover:bg-brand-green group-hover:text-white flex items-center justify-center text-brand-greenDark transition-colors">
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+        <!-- Path B: For Test Takers & Course Buyers -->
+        <a href="#training-section" class="group flex items-center justify-between p-5 rounded-2xl bg-white border-2 border-amber-200 hover:border-brand-yellow shadow-sm hover:shadow-md transition-all">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-2xl text-brand-yellowDeep shadow-inner">
+              ⚡
+            </div>
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-wider text-brand-yellowDeep bg-amber-100/70 px-2 py-0.5 rounded">READY TO TRAIN?</span>
+              <h4 class="text-base font-extrabold text-brand-navyText mt-0.5">Explore SAT, IELTS & Course Store</h4>
+              <p class="text-xs text-brand-slateSub font-medium">Enroll in Bole testing cohorts or buy focused video masterclasses in ETB / USD</p>
+            </div>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-amber-50 group-hover:bg-brand-yellow group-hover:text-brand-navyText flex items-center justify-center text-brand-yellowDeep transition-colors">
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION: CORE TRAINING PROGRAMS (SAT, IELTS, General Scholarship) -->
+  <section id="training-section" class="py-24 bg-white relative">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-xs font-bold tracking-[0.25em] text-brand-greenDark uppercase mb-1">OUR 3 CORE TRAINING PROGRAMS</p>
+        <h2 class="text-3xl sm:text-5xl font-black text-brand-navyText tracking-tight">
+          Purpose-Built <span class="text-brand-green">Preparation</span>
+        </h2>
+        <p class="text-brand-slateSub text-sm mt-3 font-semibold">
+          We don't use generic templates. Each program is custom-engineered around the specific testing system and admissions gatekeepers.
+        </p>
+      </div>
+
+      <div class="space-y-10">
+        
+        <!-- PROGRAM 1: Digital SAT -->
+        <div class="rounded-[32px] border-2 border-emerald-200 bg-gradient-to-br from-emerald-50/40 via-white to-white p-8 lg:p-10 shadow-sm hover:shadow-md transition-all">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <span class="text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-100 text-brand-greenDeep">PROGRAM 01</span>
+                <span class="text-xs font-black text-brand-greenDark flex items-center gap-1">★ 4.9/5 Student Rating</span>
+                <span class="text-xs font-bold text-brand-slateSub">• In-Person (Bole Lab) & Virtual</span>
+              </div>
+              
+              <h3 class="text-2xl sm:text-3xl font-black text-brand-navyText">
+                Digital SAT 1500+ Preparation
+              </h3>
+              
+              <p class="text-brand-slateSub text-sm leading-relaxed font-semibold">
+                Comprehensive training for the adaptive Digital SAT. We focus on timing shortcuts, Bluebook interface navigation, high-frequency Reading/Writing patterns, and mastering the Desmos graphing calculator to guarantee Math 750+.
+              </p>
+
+              <div class="grid sm:grid-cols-3 gap-3 pt-2 text-xs">
+                <div class="p-3.5 rounded-xl bg-white border border-emerald-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Format</span>
+                  <span class="font-extrabold text-brand-navyText">40h Live + Bluebook Lab</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white border border-emerald-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Target Score</span>
+                  <span class="font-extrabold text-brand-greenDark">1500+ (Ivy Competitive)</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white border border-emerald-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Tuition Fee</span>
+                  <span class="font-black text-brand-navyText price-val" data-etb="6,500 ብር" data-usd="$55">6,500 ብር</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-wrap items-center gap-3">
+                <button onclick="openBookingModal('SAT Prep Program')" class="px-7 py-3 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-extrabold text-xs shadow-md transition-all">
+                  Enroll in SAT Cohort
+                </button>
+                <button onclick="openCourseModal('Digital SAT 1500+ Prep', '6,500 ብር ($55)', '40 Hours Live', 'Yared G. (SAT 1570)')" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-emerald-50 text-brand-navyText font-bold text-xs">
+                  Inspect SAT Syllabus
+                </button>
+              </div>
+            </div>
+
+            <!-- Visual Feature Box -->
+            <div class="lg:col-span-5 bg-white rounded-2xl border-2 border-emerald-100 p-6 space-y-4 shadow-sm">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="text-xs font-black text-brand-navyText flex items-center gap-1.5">
+                  <i data-lucide="laptop" class="w-4 h-4 text-brand-green"></i>
+                  Bluebook Simulator Lab
+                </span>
+                <span class="text-[10px] font-black text-brand-greenDeep bg-emerald-100 px-2 py-0.5 rounded">Proctored Mocks</span>
+              </div>
+              <ul class="space-y-3 text-xs text-brand-slateSub font-semibold">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">8 Full Official Bluebook Mocks:</strong> Timed adaptive tests in our Bole computer lab.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">Desmos System Hacks:</strong> Solve quadratic regression & systems of equations in 15 seconds.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">Telegram Mentor Cohort:</strong> Direct daily voice Q&A with 1550+ Ethiopian SAT scorers.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PROGRAM 2: General Scholarship Mentorship -->
+        <div class="rounded-[32px] border-2 border-brand-green bg-gradient-to-br from-emerald-600 to-teal-800 p-8 lg:p-12 text-white shadow-xl relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-6 border-b border-white/20">
+              <div>
+                <span class="text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-400 text-amber-950">FLAGSHIP MENTORSHIP</span>
+                <h3 class="text-2xl sm:text-4xl font-black mt-2">General Scholarship Training & Mentorship</h3>
+                <p class="text-emerald-100 text-sm mt-1 max-w-xl font-semibold">
+                  End-to-end guidance to construct winning applications for 100% full-ride funding in the US, Europe, and Asia.
+                </p>
+              </div>
+              <div class="text-right">
+                <span class="text-xs text-emerald-200 block font-bold">Program Investment</span>
+                <span class="text-2xl sm:text-3xl font-black text-amber-300 price-val" data-etb="18,000 ብር" data-usd="$145">18,000 ብር</span>
+                <span class="text-[11px] text-emerald-100 block font-medium">Avg award won: $260,000+</span>
+              </div>
+            </div>
+
+            <!-- The 4 Distinct Pillars -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+                <span class="text-2xl">🔍</span>
+                <h4 class="font-black text-base mt-2">1. Profile Discovery</h4>
+                <p class="text-xs text-emerald-100 mt-1 leading-relaxed font-medium">Match your GPA and goals with Need-Blind US colleges and European government grants (DAAD, Stipendium).</p>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+                <span class="text-2xl">✍️</span>
+                <h4 class="font-black text-base mt-2">2. Essay Crafting</h4>
+                <p class="text-xs text-emerald-100 mt-1 leading-relaxed font-medium">Multiple revisions of your Common App personal statement and university supplementals with international alumni.</p>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+                <span class="text-2xl">📑</span>
+                <h4 class="font-black text-base mt-2">3. Financial Aid (CSS)</h4>
+                <p class="text-xs text-emerald-100 mt-1 leading-relaxed font-medium">Accurate filing of CSS Profile, ISFAA, tax declarations, and bank verification to lock in 100% full tuition & housing.</p>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+                <span class="text-2xl">🎙️</span>
+                <h4 class="font-black text-base mt-2">4. Visa Simulation</h4>
+                <p class="text-xs text-emerald-100 mt-1 leading-relaxed font-medium">1-on-1 mock interviews tailored to the US Embassy in Addis Ababa (F-1) and Schengen visa regulations.</p>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap items-center justify-between gap-4">
+              <p class="text-xs text-emerald-100 font-semibold">Includes Digital SAT and IELTS cohort classes at no extra charge.</p>
+              <button onclick="openBookingModal('General Scholarship Mentorship')" class="px-8 py-3.5 rounded-full bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-xs shadow-lg transition-all hover:scale-105">
+                Apply for Full-Ride Mentorship Cohort
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROGRAM 3: IELTS Preparation -->
+        <div class="rounded-[32px] border-2 border-emerald-200 bg-gradient-to-br from-amber-50/30 via-white to-white p-8 lg:p-10 shadow-sm hover:shadow-md transition-all">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-4">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <span class="text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-brand-yellowDeep">PROGRAM 03</span>
+                <span class="text-xs font-black text-amber-800 flex items-center gap-1">★ 4.9/5 Rating</span>
+                <span class="text-xs font-bold text-brand-greenDark">• Official British Council Partner</span>
+              </div>
+              
+              <h3 class="text-2xl sm:text-3xl font-black text-brand-navyText">
+                IELTS Academic Band 7.5 - 8.5 Preparation
+              </h3>
+              
+              <p class="text-brand-slateSub text-sm leading-relaxed font-semibold">
+                Structured English proficiency development designed for universities across the UK, Canada, Europe, and the Middle East. Focused drills across Speaking, Writing (Task 1 & 2), Listening, and Reading.
+              </p>
+
+              <div class="grid sm:grid-cols-3 gap-3 pt-2 text-xs">
+                <div class="p-3.5 rounded-xl bg-white border border-amber-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Format</span>
+                  <span class="font-extrabold text-brand-navyText">6-8 Weeks (Live + 1-on-1)</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white border border-amber-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Score Target</span>
+                  <span class="font-extrabold text-brand-yellowDeep">Band 7.5+ Guaranteed</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-white border border-amber-200 shadow-sm">
+                  <span class="text-slate-500 block text-[10px] font-bold uppercase">Tuition Fee</span>
+                  <span class="font-black text-brand-navyText price-val" data-etb="5,500 ብር" data-usd="$45">5,500 ብር</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-wrap items-center gap-3">
+                <button onclick="openBookingModal('IELTS Cohort Program')" class="px-7 py-3 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-extrabold text-xs shadow-md transition-all">
+                  Enroll in IELTS Cohort
+                </button>
+                <button onclick="openCourseModal('IELTS Academic Band 7.5+', '5,500 ብር ($45)', '32 Hours Live', 'Helen T. (IELTS 8.5 Trainer)')" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-emerald-50 text-brand-navyText font-bold text-xs">
+                  Inspect IELTS Modules
+                </button>
+              </div>
+            </div>
+
+            <!-- Visual Feature Box -->
+            <div class="lg:col-span-5 bg-white rounded-2xl border-2 border-amber-200 p-6 space-y-4 shadow-sm">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                <span class="text-xs font-black text-brand-navyText flex items-center gap-1.5">
+                  <i data-lucide="mic" class="w-4 h-4 text-brand-yellow"></i>
+                  1-on-1 Speaking Examiner Practice
+                </span>
+                <span class="text-[10px] font-black text-brand-yellowDeep bg-amber-100 px-2 py-0.5 rounded">6 Mock Sessions</span>
+              </div>
+              <ul class="space-y-3 text-xs text-brand-slateSub font-semibold">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-yellow flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">Band 9 Writing Templates:</strong> Master complex sentence structure & coherent task 2 essays.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-yellow flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">Pronunciation & Fluency:</strong> Real recorded audio drills to eliminate hesitation and grammatical slips.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-yellow flex-shrink-0 mt-0.5"></i>
+                  <span><strong class="text-brand-navyText">Test Registration Assistance:</strong> Authorized booking support at Addis Ababa test venues.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: Course Discovery & Sales Store -->
+  <section id="courses-section" class="py-24 bg-emerald-50/50 relative border-t border-emerald-100">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-brand-greenDark mb-1">PURCHASABLE COURSES</p>
+          <h2 class="text-3xl sm:text-4xl font-black text-brand-navyText">
+            Educational Course <span class="text-brand-green">Store</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-brand-slateSub mt-1 font-semibold">
+            Self-paced masterclasses and targeted modules with instant access via Telebirr, CBE, or international cards.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2 mt-4 md:mt-0 flex-wrap">
+          <button onclick="filterCourses('all')" data-category="all" class="course-filter-btn px-4 py-2 rounded-full text-xs font-black bg-brand-greenDark text-white shadow-sm">
+            All Courses
+          </button>
+          <button onclick="filterCourses('sat')" data-category="sat" class="course-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-brand-slateSub border border-slate-200 hover:bg-slate-50">
+            Digital SAT
+          </button>
+          <button onclick="filterCourses('ielts')" data-category="ielts" class="course-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-brand-slateSub border border-slate-200 hover:bg-slate-50">
+            IELTS
+          </button>
+          <button onclick="filterCourses('essay')" data-category="essay" class="course-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-brand-slateSub border border-slate-200 hover:bg-slate-50">
+            Essays & Visa
+          </button>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Course 1 -->
+        <div class="course-card theme-card rounded-3xl p-6 flex flex-col justify-between" data-category="sat">
+          <div>
+            <div class="flex justify-between items-center pb-3 border-b border-emerald-100">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-emerald-100 text-brand-greenDeep">SAT MATH ACCELERATOR</span>
+              <span class="text-xs font-black text-brand-yellowDeep">★ 4.9 (320)</span>
+            </div>
+            
+            <h4 class="font-black text-brand-navyText text-base mt-3">Desmos Graphing & High-Yield SAT Math</h4>
+            
+            <div class="mt-2.5 space-y-1.5 text-xs">
+              <p class="text-brand-slateSub font-semibold"><strong class="text-brand-navyText">Intended Learners:</strong> Grade 11-12 & Gap-year students seeking 750+ in SAT Math.</p>
+              <p class="text-brand-greenDeep font-bold"><strong class="text-brand-navyText">Key Outcome:</strong> +180 Math score boost via regression shortcuts & system solvers.</p>
+              <p class="text-slate-500 text-[11px] font-medium">Instructor: Yared G. (SAT Math 800) • 16 Hours Video + Lab Questions</p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-lg font-black text-brand-greenDark price-val" data-etb="3,200 ብር" data-usd="$25">3,200 ብር</span>
+              <span class="text-[11px] line-through text-slate-400 ml-1.5 price-original" data-etb="4,500 ብር" data-usd="$38">4,500 ብር</span>
+            </div>
+            <button onclick="openCourseModal('Desmos Graphing & High-Yield SAT Math', '3,200 ብር ($25)', '16 Hours', 'Yared G. (SAT Math 800)')" class="px-4 py-2 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-sm">
+              View Syllabus
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card theme-card rounded-3xl p-6 flex flex-col justify-between" data-category="essay">
+          <div>
+            <div class="flex justify-between items-center pb-3 border-b border-emerald-100">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-amber-100 text-brand-yellowDeep">COMMON APP MASTERCLASS</span>
+              <span class="text-xs font-black text-brand-yellowDeep">★ 5.0 (180)</span>
+            </div>
+            
+            <h4 class="font-black text-brand-navyText text-base mt-3">Personal Statement & Supplemental Essay Lab</h4>
+            
+            <div class="mt-2.5 space-y-1.5 text-xs">
+              <p class="text-brand-slateSub font-semibold"><strong class="text-brand-navyText">Intended Learners:</strong> Undergraduate applicants targeting US Need-Blind & Top 50.</p>
+              <p class="text-brand-greenDeep font-bold"><strong class="text-brand-navyText">Key Outcome:</strong> Turn Ethiopian life stories into compelling Ivy-accepted narratives.</p>
+              <p class="text-slate-500 text-[11px] font-medium">Instructor: Kidus M. (Columbia Alumni) • 20 Hours + 4 Draft Reviews</p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-lg font-black text-brand-greenDark price-val" data-etb="4,800 ብር" data-usd="$40">4,800 ብር</span>
+              <span class="text-[11px] line-through text-slate-400 ml-1.5 price-original" data-etb="6,000 ብር" data-usd="$50">6,000 ብር</span>
+            </div>
+            <button onclick="openCourseModal('Personal Statement & Supplemental Essay Lab', '4,800 ብር ($40)', '20 Hours', 'Kidus M. (Columbia Alumni)')" class="px-4 py-2 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-sm">
+              View Syllabus
+            </button>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card theme-card rounded-3xl p-6 flex flex-col justify-between" data-category="ielts">
+          <div>
+            <div class="flex justify-between items-center pb-3 border-b border-emerald-100">
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-emerald-100 text-brand-greenDeep">IELTS SPEAKING INTENSIVE</span>
+              <span class="text-xs font-black text-brand-yellowDeep">★ 4.9 (240)</span>
+            </div>
+            
+            <h4 class="font-black text-brand-navyText text-base mt-3">IELTS Speaking Part 1-3 Fluency Accelerator</h4>
+            
+            <div class="mt-2.5 space-y-1.5 text-xs">
+              <p class="text-brand-slateSub font-semibold"><strong class="text-brand-navyText">Intended Learners:</strong> European Master's and undergraduate study abroad candidates.</p>
+              <p class="text-brand-greenDeep font-bold"><strong class="text-brand-navyText">Key Outcome:</strong> Eliminate hesitations and achieve Band 7.5 - 8.5 speaking fluency.</p>
+              <p class="text-slate-500 text-[11px] font-medium">Instructor: Helen T. (Certified IELTS 8.5) • 12 Hours + Audio Feedback</p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-lg font-black text-brand-greenDark price-val" data-etb="2,900 ብር" data-usd="$22">2,900 ብር</span>
+              <span class="text-[11px] line-through text-slate-400 ml-1.5 price-original" data-etb="3,800 ብር" data-usd="$30">3,800 ብር</span>
+            </div>
+            <button onclick="openCourseModal('IELTS Speaking Part 1-3 Fluency Accelerator', '2,900 ብር ($22)', '12 Hours', 'Helen T. (IELTS 8.5 Trainer)')" class="px-4 py-2 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-sm">
+              View Syllabus
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: Interactive Pathway Finder (Figma Prototype Flow) -->
+  <section id="pathway-finder" class="py-24 bg-white relative border-t border-emerald-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 border border-emerald-300 text-xs font-black text-brand-greenDeep mb-3">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-yellow"></i>
+          <span>INTERACTIVE FIGMA PROTOTYPE FLOW</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black text-brand-navyText">
+          Find Your Custom <span class="text-brand-green">Roadmap</span>
+        </h2>
+        <p class="text-brand-slateSub text-sm mt-2 font-semibold">
+          Whether you are a beginner exploring where to start or a test taker seeking higher scores, select your parameters below.
+        </p>
+
+        <!-- Progress Tracker -->
+        <div class="flex items-center justify-center gap-3 mt-6">
+          <button id="step-btn-1" onclick="setFlowStep(1)" class="w-9 h-9 rounded-full bg-brand-greenDark text-white font-black text-sm flex items-center justify-center ring-4 ring-emerald-100 shadow-md">1</button>
+          <div class="w-10 h-1 bg-emerald-200 rounded"></div>
+          <button id="step-btn-2" onclick="setFlowStep(2)" class="w-9 h-9 rounded-full bg-slate-100 text-brand-slateSub font-bold text-sm flex items-center justify-center ring-4 ring-slate-100">2</button>
+          <div class="w-10 h-1 bg-slate-200 rounded"></div>
+          <button id="step-btn-3" onclick="setFlowStep(3)" class="w-9 h-9 rounded-full bg-slate-100 text-brand-slateSub font-bold text-sm flex items-center justify-center ring-4 ring-slate-100">3</button>
+        </div>
+      </div>
+
+      <!-- STEP 1: Goal Selection -->
+      <div id="flow-step-1">
+        <h3 class="text-center font-bold text-base text-brand-navyText mb-6">Step 1: What is your primary educational objective?</h3>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_goal" value="undergrad" checked onchange="updateFlowSelection()" class="hidden">
+            <div class="p-5 rounded-2xl border-2 border-brand-green bg-emerald-50/70 transition-all flex flex-col justify-between h-40 shadow-sm">
+              <div>
+                <span class="text-2xl">🎓</span>
+                <h4 class="font-extrabold text-brand-navyText text-sm mt-1">Undergraduate Full-Ride</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold mt-1">Common App & Ivy Need-Blind.</p>
+              </div>
+              <span class="text-[10px] font-black text-brand-greenDark uppercase">Selected ✓</span>
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_goal" value="masters" onchange="updateFlowSelection()" class="hidden">
+            <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white transition-all flex flex-col justify-between h-40 hover:border-emerald-300">
+              <div>
+                <span class="text-2xl">🏛️</span>
+                <h4 class="font-extrabold text-brand-navyText text-sm mt-1">European Master's</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold mt-1">DAAD & Stipendium Hungaricum.</p>
+              </div>
+              <span class="text-[10px] font-bold text-slate-400">Select</span>
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_goal" value="sat" onchange="updateFlowSelection()" class="hidden">
+            <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white transition-all flex flex-col justify-between h-40 hover:border-emerald-300">
+              <div>
+                <span class="text-2xl">⚡</span>
+                <h4 class="font-extrabold text-brand-navyText text-sm mt-1">Digital SAT 1500+</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold mt-1">Desmos mastery & test pacing.</p>
+              </div>
+              <span class="text-[10px] font-bold text-slate-400">Select</span>
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_goal" value="ielts" onchange="updateFlowSelection()" class="hidden">
+            <div class="p-5 rounded-2xl border-2 border-slate-200 bg-white transition-all flex flex-col justify-between h-40 hover:border-emerald-300">
+              <div>
+                <span class="text-2xl">🗣️</span>
+                <h4 class="font-extrabold text-brand-navyText text-sm mt-1">IELTS Band 7.5+</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold mt-1">British Council partner drills.</p>
+              </div>
+              <span class="text-[10px] font-bold text-slate-400">Select</span>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="mt-8 text-center">
+          <button onclick="setFlowStep(2)" class="px-8 py-3 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-md transition-all">
+            Continue to Step 2 →
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Format -->
+      <div id="flow-step-2" class="max-w-xl mx-auto hidden">
+        <h3 class="text-center font-bold text-base text-brand-navyText mb-6">Step 2: Where do you prefer to study?</h3>
+        
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_format" value="inperson" checked onchange="updateFlowFormatSelection()" class="hidden">
+            <div class="p-6 rounded-2xl border-2 border-brand-green bg-emerald-50/70 transition-all space-y-2">
+              <span class="text-3xl">📍</span>
+              <h4 class="font-black text-brand-navyText text-sm">In-Person (Bole Campus)</h4>
+              <p class="text-xs text-brand-slateSub font-semibold">Access computer labs, face-to-face mentorship and mock exams in Addis Ababa.</p>
+              <span class="inline-block text-[10px] font-black text-brand-greenDark uppercase">Selected ✓</span>
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="flow_format" value="online" onchange="updateFlowFormatSelection()" class="hidden">
+            <div class="p-6 rounded-2xl border-2 border-slate-200 bg-white transition-all space-y-2 hover:border-emerald-300">
+              <span class="text-3xl">💻</span>
+              <h4 class="font-black text-brand-navyText text-sm">Live Virtual Interactive</h4>
+              <p class="text-xs text-brand-slateSub font-semibold">Join from anywhere via Zoom, LMS portal, and Telegram cohort mentor channel.</p>
+              <span class="inline-block text-[10px] font-bold text-slate-400">Select</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="mt-8 flex justify-center gap-3">
+          <button onclick="setFlowStep(1)" class="px-5 py-2.5 rounded-full border border-slate-300 text-brand-slateSub font-bold text-xs hover:bg-slate-50">
+            ← Back
+          </button>
+          <button onclick="setFlowStep(3); generateCustomPathway()" class="px-7 py-2.5 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-md transition-all">
+            Generate Pathway ✨
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Blueprint Results -->
+      <div id="flow-step-3" class="max-w-2xl mx-auto hidden">
+        <div class="bg-gradient-to-br from-emerald-50 to-amber-50/50 rounded-3xl p-8 border-2 border-emerald-300 shadow-xl">
+          
+          <div class="flex items-center justify-between pb-4 border-b border-emerald-200">
+            <div>
+              <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full bg-emerald-200 text-brand-greenDeep">VERIFIED BLUEPRINT</span>
+              <h3 id="flow-result-title" class="text-xl font-black text-brand-navyText mt-1">US Undergraduate Full-Ride Path</h3>
+            </div>
+            <div class="w-10 h-10 rounded-xl bg-brand-green text-white flex items-center justify-center text-xl shadow-md">
+              🎯
+            </div>
+          </div>
+
+          <p id="flow-result-desc" class="text-brand-slateSub text-xs mt-3 leading-relaxed font-semibold">
+            Custom pathway designed for Ethiopian high school seniors targeting Need-Blind and Top 50 institutions with full scholarship funding.
+          </p>
+
+          <div class="mt-5 grid sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-white border border-emerald-200">
+              <span class="text-slate-500 font-bold block text-[11px]">Recommended Program</span>
+              <span id="flow-rec-program" class="font-black text-brand-greenDark text-xs mt-0.5 block">Digital SAT 1500+ Prep + Common App Mentorship</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-emerald-200">
+              <span class="text-slate-500 font-bold block text-[11px]">Estimated Timeline</span>
+              <span id="flow-rec-timeline" class="font-black text-brand-navyText text-xs mt-0.5 block">4 - 6 Months</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-emerald-200">
+              <span class="text-slate-500 font-bold block text-[11px]">Award Potential</span>
+              <span id="flow-rec-award" class="font-black text-brand-yellowDeep text-xs mt-0.5 block">100% Tuition + Housing & Stipend</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-emerald-200">
+              <span class="text-slate-500 font-bold block text-[11px]">Delivery Mode</span>
+              <span id="flow-rec-mode" class="font-black text-brand-navyText text-xs mt-0.5 block">In-Person (Bole Campus)</span>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-col sm:flex-row items-center gap-3">
+            <button onclick="openBookingModal('Pathway Results Booking')" class="w-full sm:w-auto flex-1 py-3 rounded-full bg-brand-green hover:bg-brand-greenDark text-white font-black text-xs shadow-md transition-all">
+              Claim Plan & Book Consultation
+            </button>
+            <button onclick="setFlowStep(1)" class="w-full sm:w-auto px-5 py-3 rounded-full bg-white border border-emerald-300 text-brand-greenDark font-bold text-xs hover:bg-emerald-50">
+              Start Over
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: Student Acceptances & Credibility Evidence -->
+  <section id="results-section" class="py-24 bg-emerald-50/50 relative border-t border-emerald-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <p class="text-xs font-bold tracking-[0.25em] text-brand-greenDark uppercase mb-1">STUDENT ADMISSIONS & CREDIBILITY</p>
+        <h2 class="text-3xl font-black text-brand-navyText">
+          Real Ethiopian Students. <span class="text-brand-green">Verified Results.</span>
+        </h2>
+        <p class="text-brand-slateSub text-xs sm:text-sm mt-2 font-semibold">
+          Genuine acceptance letters and scholarship awards won through Negus mentorship.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Student 1 -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-emerald-100 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-emerald-100">
+              <span class="text-xs font-black text-brand-navyText">HARVARD UNIVERSITY 🇺🇸</span>
+              <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 text-brand-greenDeep">FULL-RIDE</span>
+            </div>
+
+            <div class="mt-4 flex items-center gap-3.5">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Bethlehem" class="w-12 h-12 rounded-full object-cover border-2 border-brand-green">
+              <div>
+                <h4 class="font-black text-brand-navyText text-sm">Bethlehem T.</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold">Computer Science & Econ</p>
+              </div>
+            </div>
+
+            <div class="mt-3.5 p-3 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs space-y-1">
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Award:</span>
+                <span class="font-black text-brand-greenDark font-mono">$88,400 / Year</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Score:</span>
+                <span class="font-black text-brand-navyText">SAT 1540 (Math 790)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[10px] text-slate-400 font-semibold">Class of 2029</span>
+            <button onclick="viewAcceptanceLetter('Bethlehem T.', 'Harvard University', '$88,400/yr Full Ride', 'Computer Science & Economics', 'SAT 1540')" class="text-xs font-black text-brand-greenDark hover:underline flex items-center gap-1">
+              <i data-lucide="file-check" class="w-3.5 h-3.5"></i>
+              <span>View Verification</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Student 2 -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-emerald-100 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-emerald-100">
+              <span class="text-xs font-black text-brand-navyText">UNIVERSITY OF DEBRECEN 🇭🇺</span>
+              <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-amber-100 text-brand-yellowDeep">STIPENDIUM</span>
+            </div>
+
+            <div class="mt-4 flex items-center gap-3.5">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Yohannes" class="w-12 h-12 rounded-full object-cover border-2 border-brand-yellow">
+              <div>
+                <h4 class="font-black text-brand-navyText text-sm">Yohannes M.</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold">Doctor of General Medicine</p>
+              </div>
+            </div>
+
+            <div class="mt-3.5 p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-xs space-y-1">
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Award:</span>
+                <span class="font-black text-brand-yellowDeep font-mono">100% Tuition + Housing</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Score:</span>
+                <span class="font-black text-brand-navyText">IELTS 7.5 Overall</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[10px] text-slate-400 font-semibold">Medical Cohort</span>
+            <button onclick="viewAcceptanceLetter('Yohannes M.', 'University of Debrecen', 'Stipendium Hungaricum Full Award', 'General Medicine (MD)', 'IELTS 7.5')" class="text-xs font-black text-brand-greenDark hover:underline flex items-center gap-1">
+              <i data-lucide="file-check" class="w-3.5 h-3.5"></i>
+              <span>View Verification</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="bg-white rounded-2xl p-6 border-2 border-emerald-100 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-emerald-100">
+              <span class="text-xs font-black text-brand-navyText">NYU ABU DHABI 🇦🇪</span>
+              <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 text-brand-greenDeep">FELLOWSHIP</span>
+            </div>
+
+            <div class="mt-4 flex items-center gap-3.5">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Selamawit" class="w-12 h-12 rounded-full object-cover border-2 border-brand-green">
+              <div>
+                <h4 class="font-black text-brand-navyText text-sm">Selamawit K.</h4>
+                <p class="text-[11px] text-brand-slateSub font-semibold">Mechanical Engineering</p>
+              </div>
+            </div>
+
+            <div class="mt-3.5 p-3 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs space-y-1">
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Award:</span>
+                <span class="font-black text-brand-greenDark font-mono">$84,000 / Year + Flights</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-500 font-bold">Score:</span>
+                <span class="font-black text-brand-navyText">Digital SAT 1520</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[10px] text-slate-400 font-semibold">Class of 2028</span>
+            <button onclick="viewAcceptanceLetter('Selamawit K.', 'NYU Abu Dhabi', '$84,000/yr Global Fellowship', 'Mechanical Engineering', 'SAT 1520')" class="text-xs font-black text-brand-greenDark hover:underline flex items-center gap-1">
+              <i data-lucide="file-check" class="w-3.5 h-3.5"></i>
+              <span>View Verification</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Balanced Credibility Disclaimer Note -->
+      <div class="mt-8 p-4 rounded-2xl bg-white border-2 border-emerald-200 text-center max-w-3xl mx-auto shadow-sm">
+        <p class="text-xs text-brand-slateSub leading-relaxed font-semibold">
+          <strong class="text-brand-navyText">Admissions Transparency:</strong> Every scholarship journey is unique. Actual awards depend on individual academic GPA, extracurricular rigor, standardized testing, and institutional funding quotas. Negus Consultants provides structured strategy, verified university contacts, and ethical mentorship.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: Free Educational Content & Resource Shelf -->
+  <section id="resources-section" class="py-24 bg-white relative border-t border-emerald-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-xs font-bold uppercase tracking-widest text-brand-greenDark mb-1">FREE SCHOLARSHIP RESOURCES</p>
+        <h2 class="text-3xl font-black text-brand-navyText">
+          Learn Before You <span class="text-brand-green">Enroll</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-brand-slateSub mt-2 font-semibold">
+          Free high-yield resources created by Negus faculty to help Ethiopian students start their journey with confidence.
+        </p>
+      </div>
+
+      <!-- Resource Grid -->
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        <div class="p-6 rounded-2xl border-2 border-emerald-100 bg-emerald-50/40 flex flex-col justify-between">
+          <div>
+            <span class="text-3xl">📘</span>
+            <h4 class="font-extrabold text-brand-navyText text-base mt-2">2026 Full-Ride Directory</h4>
+            <p class="text-xs text-brand-slateSub mt-1.5 font-semibold leading-relaxed">
+              Curated list of 45+ international universities that offer need-blind and 100% full-tuition grants to African applicants.
+            </p>
+          </div>
+          <button onclick="showToast('📥 2026 Full-Ride Directory PDF sent to your downloads!')" class="mt-5 text-xs font-black text-brand-greenDark hover:underline flex items-center gap-1.5">
+            <span>Download Free PDF</span>
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 rounded-2xl border-2 border-amber-100 bg-amber-50/40 flex flex-col justify-between">
+          <div>
+            <span class="text-3xl">📝</span>
+            <h4 class="font-extrabold text-brand-navyText text-base mt-2">Common App Essay Worksheet</h4>
+            <p class="text-xs text-brand-slateSub mt-1.5 font-semibold leading-relaxed">
+              Our 5-part brainstorming exercise to uncover impactful personal stories and avoid cliché application topics.
+            </p>
+          </div>
+          <button onclick="showToast('📥 Essay Worksheet sent to your downloads!')" class="mt-5 text-xs font-black text-brand-yellowDeep hover:underline flex items-center gap-1.5">
+            <span>Download Worksheet</span>
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <div class="p-6 rounded-2xl border-2 border-emerald-100 bg-emerald-50/40 flex flex-col justify-between">
+          <div>
+            <span class="text-3xl">📊</span>
+            <h4 class="font-extrabold text-brand-navyText text-base mt-2">SAT Desmos Calculator Sheet</h4>
+            <p class="text-xs text-brand-slateSub mt-1.5 font-semibold leading-relaxed">
+              The 12 most frequent mathematical regression and graphical formulas to solve Digital SAT module questions instantly.
+            </p>
+          </div>
+          <button onclick="showToast('📥 Desmos Formula Sheet sent to your downloads!')" class="mt-5 text-xs font-black text-brand-greenDark hover:underline flex items-center gap-1.5">
+            <span>Download Cheat Sheet</span>
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Email Newsletter / Free Live Webinar Callout -->
+      <div class="bg-gradient-to-r from-emerald-600 via-teal-700 to-emerald-700 rounded-[28px] p-8 sm:p-10 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="max-w-lg text-center md:text-left">
+          <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full bg-amber-400 text-amber-950">MONTHLY LIVE WORKSHOP</span>
+          <h3 class="text-2xl sm:text-3xl font-black mt-2">Free Scholarship Advisory Webinar</h3>
+          <p class="text-emerald-100 text-xs sm:text-sm mt-1.5 leading-relaxed font-semibold">
+            Join our live Zoom session this Saturday with Ethiopian scholarship alumni currently studying at Harvard & Debrecen.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row items-center gap-2.5 w-full md:w-auto">
+          <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-full text-xs text-brand-navyText bg-white border border-emerald-200 focus:outline-none w-full sm:w-56 font-semibold">
+          <button onclick="showToast('🎉 Registered for upcoming free webinar! Zoom link emailed.')" class="px-6 py-3 rounded-full bg-amber-400 hover:bg-amber-300 text-amber-950 font-black text-xs shadow whitespace-nowrap transition-all">
+            Join Free Webinar 🎟️
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: About Negus Consultants -->
+  <section id="about-section" class="relative bg-emerald-50/60 overflow-hidden py-24 sm:py-28 border-t border-emerald-100">
+    <div class="relative max-w-[1400px] mx-auto px-6 lg:px-12">
+      
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <div class="text-center lg:text-left">
+          <p class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.3em] text-brand-greenDark justify-center lg:justify-start">
+            <span class="w-6 h-px bg-brand-greenDark"></span>ABOUT NEGUS CONSULTANTS
+          </p>
+          <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-brand-navyText">
+            Your Trusted Partner for <br>
+            <span class="text-brand-green">International Education & Scholarships</span>
+          </h2>
+          <p class="mt-5 text-brand-slateSub leading-relaxed max-w-lg mx-auto lg:mx-0 font-semibold">
+            Negus Consultants is an approved educational consultancy based in Addis Ababa, Ethiopia. We specialize in standardized test preparation (Digital SAT, IELTS, Duolingo), strategic profile building, and end-to-end guidance for winning fully funded scholarships across world-leading universities.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="relative rounded-[28px] overflow-hidden shadow-xl border-2 border-emerald-200 bg-white">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80" alt="Students in Classroom" class="w-full h-[280px] sm:h-[340px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/40 via-transparent to-transparent"></div>
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-green via-brand-yellow to-brand-green"></div>
+          </div>
+          
+          <div class="absolute -bottom-6 -left-4 sm:left-6 bg-white rounded-2xl shadow-xl px-6 py-4 flex items-center gap-3 border border-emerald-200">
+            <p class="text-3xl font-black text-brand-greenDark">2015<span class="text-sm text-brand-yellowDeep align-top font-black">E.C.</span></p>
+            <p class="text-xs text-brand-navyText font-extrabold leading-snug max-w-[130px]">Established in Addis Ababa & guiding students ever since</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3 Pillars of Negus -->
+      <div class="mt-20 grid lg:grid-cols-3 gap-6">
+        <div class="theme-card rounded-[28px] p-8 relative overflow-hidden">
+          <span class="absolute top-6 right-8 text-5xl font-black text-emerald-100">01</span>
+          <div class="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-brand-greenDark mb-6">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <p class="text-xs font-bold tracking-[0.2em] text-brand-greenDark uppercase">WHO WE ARE</p>
+          <h3 class="mt-2 text-xl font-extrabold text-brand-navyText">Approved Education Consultants</h3>
+          <p class="mt-3 text-sm text-brand-slateSub leading-relaxed font-semibold">
+            Operating from Bole Medhanialem with dedicated testing labs and personal mentorship for high-stakes exams.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-600 to-teal-800 rounded-[28px] p-8 relative overflow-hidden text-white shadow-xl shadow-emerald-500/20">
+          <span class="absolute top-6 right-8 text-5xl font-black text-white/20">02</span>
+          <div class="w-12 h-12 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center text-white mb-6">
+            <i data-lucide="compass" class="w-6 h-6"></i>
+          </div>
+          <p class="text-xs font-black tracking-[0.2em] text-amber-300 uppercase">OUR MISSION</p>
+          <h3 class="mt-2 text-xl font-extrabold text-white">Bridge Talent with Global Universities</h3>
+          <p class="mt-3 text-sm text-emerald-100 leading-relaxed font-semibold">
+            Direct roadmaps for undergraduate full-rides and European master's funding without hidden costs.
+          </p>
+        </div>
+
+        <div class="theme-card rounded-[28px] p-8 relative overflow-hidden">
+          <span class="absolute top-6 right-8 text-5xl font-black text-amber-100">03</span>
+          <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-yellowDeep mb-6">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <p class="text-xs font-bold tracking-[0.2em] text-brand-yellowDeep uppercase">WHY TRUST US</p>
+          <h3 class="mt-2 text-xl font-extrabold text-brand-navyText">End-to-End Alumni Support</h3>
+          <p class="mt-3 text-sm text-brand-slateSub leading-relaxed font-semibold">
+            Essays polished by real scholarship recipients and authentic visa interview drills until campus arrival.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER: Addis Ababa Location, Links & Credentials (Clean Deep Forest Emerald with Yellow Accent) -->
+  <footer id="contact-section" class="bg-emerald-950 text-emerald-100 pt-16 pb-12 border-t-4 border-brand-yellow">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-emerald-800/80">
+        
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" onerror="this.src='negus_logo.png';" alt="Negus Consultants" class="h-10 w-auto object-contain rounded bg-white p-0.5">
+            <div>
+              <span class="font-extrabold text-xl tracking-tight text-white">NEGUS</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-brand-green/30 text-emerald-300 ml-1.5">CONSULTANTS</span>
+            </div>
+          </div>
+          <p class="text-xs text-emerald-200/90 max-w-sm leading-relaxed font-medium">
+            Approved educational and scholarship consultancy in Addis Ababa, Ethiopia. Empowering students to access world-class universities through rigorous preparation.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-emerald-300">
+            <a href="https://t.me/negusconsultants" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-green hover:text-white flex items-center justify-center transition-all" aria-label="Telegram">
+              <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-green hover:text-white flex items-center justify-center transition-all" aria-label="WhatsApp">
+              <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-brand-green hover:text-white flex items-center justify-center transition-all" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-yellow">Programs</h4>
+          <ul class="space-y-1.5 text-xs text-emerald-200/90 font-medium">
+            <li><a href="#training-section" class="hover:text-white">Digital SAT 1500+ Prep</a></li>
+            <li><a href="#training-section" class="hover:text-white">IELTS Academic (7.5+)</a></li>
+            <li><a href="#training-section" class="hover:text-white">General Full-Ride Mentorship</a></li>
+            <li><a href="#courses-section" class="hover:text-white">Common App Essays</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-yellow">Explore</h4>
+          <ul class="space-y-1.5 text-xs text-emerald-200/90 font-medium">
+            <li><a href="#pathway-finder" class="hover:text-white">Pathway Finder Match</a></li>
+            <li><a href="#results-section" class="hover:text-white">Student Admissions Evidence</a></li>
+            <li><a href="#courses-section" class="hover:text-white">Course Store & Pricing</a></li>
+            <li><a href="#resources-section" class="hover:text-white">Free Educational Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-brand-yellow">Addis Ababa Campus</h4>
+          <div class="space-y-2 text-xs text-emerald-200/90 font-medium">
+            <p class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow flex-shrink-0 mt-0.5"></i>
+              <span>Bole Medhanialem, Morning Star Complex, Flr 4, Addis Ababa</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-yellow flex-shrink-0"></i>
+              <span>+251 911 234 567 / +251 116 789 012</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-yellow flex-shrink-0"></i>
+              <span>admissions@negusconsultants.com</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-emerald-300/80 gap-3">
+        <p>© 2026 Negus Consultants. Registered Educational Consultancy in Addis Ababa, Ethiopia.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#hero-section" class="text-brand-yellow hover:underline flex items-center gap-1 font-bold">
+            <span>Back to Top ↑</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- MODAL: Booking Consultation -->
+  <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden transition-opacity">
+    <div class="bg-white rounded-[28px] max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto border-2 border-emerald-300">
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-emerald-50 hover:bg-emerald-100 text-slate-700 flex items-center justify-center">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="text-left mb-6">
+        <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-100 text-brand-greenDeep uppercase">CONSULTATION BOOKING</span>
+        <h3 class="text-2xl font-black text-brand-navyText mt-1">Book an Advisory Session</h3>
+        <p class="text-xs text-brand-slateSub mt-1 font-semibold">Visit our Bole campus or schedule an online Zoom discussion.</p>
+      </div>
+
+      <form onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs font-semibold">
+        <div>
+          <label class="block text-brand-navyText font-bold mb-1">Full Name</label>
+          <input type="text" required placeholder="e.g. Alazar Tadesse" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-green font-medium">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-brand-navyText font-bold mb-1">Phone (with WhatsApp/Telegram)</label>
+            <input type="tel" required placeholder="+251 9..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-green font-medium">
+          </div>
+          <div>
+            <label class="block text-brand-navyText font-bold mb-1">Email Address</label>
+            <input type="email" required placeholder="name@domain.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-green font-medium">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-brand-navyText font-bold mb-1">Program of Interest</label>
+            <select id="modal-program-select" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-green bg-white font-medium">
+              <option value="SAT Prep">Digital SAT Preparation</option>
+              <option value="IELTS Prep">IELTS Academic Preparation</option>
+              <option value="Full Scholarship">Undergraduate Full-Ride Mentorship</option>
+              <option value="Graduate Scholarship">Master's / PhD Funding</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-brand-navyText font-bold mb-1">Meeting Location</label>
+            <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-green bg-white font-medium">
+              <option value="Bole Campus">In-Person (Bole Campus, Addis Ababa)</option>
+              <option value="Zoom Call">Online Zoom Video Session</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-full bg-brand-green text-white font-black text-xs hover:bg-brand-greenDark shadow-md transition-all">
+          Confirm Consultation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- MODAL: Course Details -->
+  <div id="course-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden transition-opacity">
+    <div class="bg-white rounded-[28px] max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto border-2 border-emerald-300">
+      <button onclick="closeCourseModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-emerald-50 hover:bg-emerald-100 text-slate-700 flex items-center justify-center">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <span class="text-[10px] font-black px-2 py-0.5 rounded bg-emerald-100 text-brand-greenDeep uppercase">COURSE OVERVIEW</span>
+      <h3 id="cmodal-title" class="text-xl font-black text-brand-navyText mt-1">Course Title</h3>
+      
+      <div class="mt-4 p-3.5 rounded-xl bg-emerald-50/80 border border-emerald-200 grid grid-cols-2 gap-2 text-xs">
+        <div>
+          <span class="text-slate-500 block text-[10px] font-bold">Tuition / Fee</span>
+          <span id="cmodal-price" class="font-black text-brand-greenDark text-base">4,200 ብር</span>
+        </div>
+        <div>
+          <span class="text-slate-500 block text-[10px] font-bold">Duration & Format</span>
+          <span id="cmodal-duration" class="font-black text-brand-navyText text-base">36 Hours</span>
+        </div>
+      </div>
+
+      <div class="mt-4 space-y-2 text-xs text-brand-slateSub font-semibold">
+        <p id="cmodal-instructor" class="font-black text-brand-greenDark">Instructor: Senior Faculty</p>
+        <p class="font-bold text-brand-navyText">Curriculum Highlights:</p>
+        <ul class="space-y-1 list-disc list-inside text-brand-slateSub font-medium">
+          <li>Complete question banks and practice cheat sheets</li>
+          <li>Weekly live interactive problem-solving workshops</li>
+          <li>Telegram cohort channel with mentors for instant Q&A</li>
+        </ul>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+        <button onclick="enrollInCourse()" class="flex-1 py-3 rounded-full bg-brand-green text-white font-black text-xs hover:bg-brand-greenDark shadow-md transition-all">
+          Enroll via Telebirr or CBE
+        </button>
+        <button onclick="closeCourseModal()" class="px-5 py-3 rounded-full bg-slate-100 text-brand-navyText font-bold text-xs hover:bg-slate-200">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL: Acceptance Verification -->
+  <div id="acceptance-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md hidden transition-opacity">
+    <div class="bg-white rounded-[28px] max-w-md w-full p-6 shadow-2xl relative text-center border-2 border-emerald-300">
+      <button onclick="closeAcceptanceModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-emerald-50 hover:bg-emerald-100 text-slate-700 flex items-center justify-center">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-full bg-emerald-100 text-brand-greenDark flex items-center justify-center mx-auto mb-3 shadow-inner">
+        <i data-lucide="award" class="w-6 h-6"></i>
+      </div>
+
+      <span class="text-[10px] font-black px-2 py-0.5 rounded bg-emerald-100 text-brand-greenDeep uppercase">VERIFIED RECORD</span>
+      <h3 id="amodal-student" class="text-lg font-black text-brand-navyText mt-1">Student Name</h3>
+      <p id="amodal-university" class="text-xs font-black text-brand-greenDark">University Name</p>
+      
+      <div class="mt-4 p-4 rounded-xl bg-emerald-50/80 border border-emerald-200 text-left space-y-1.5 text-xs font-semibold">
+        <div class="flex justify-between">
+          <span class="text-slate-500 font-bold">Scholarship Award:</span>
+          <span id="amodal-award" class="font-black text-brand-greenDark font-mono">Full Ride</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500 font-bold">Field of Study:</span>
+          <span id="amodal-major" class="font-black text-brand-navyText">Major</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-slate-500 font-bold">Standardized Score:</span>
+          <span id="amodal-score" class="font-black text-brand-yellowDeep">SAT Score</span>
+        </div>
+      </div>
+
+      <button onclick="closeAcceptanceModal()" class="mt-4 w-full py-2.5 rounded-full bg-emerald-100 text-brand-greenDeep font-black text-xs hover:bg-emerald-200">
+        Close Verification
+      </button>
+    </div>
+  </div>
+
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-brand-navyText rounded-2xl px-5 py-3.5 border-2 border-brand-green text-white text-xs font-bold shadow-2xl flex items-center gap-3 translate-y-20 opacity-0 transition-all duration-300">
+    <div class="w-6 h-6 rounded-full bg-brand-green text-white flex items-center justify-center font-black">✓</div>
+    <span id="toast-msg">Operation successful</span>
+  </div>
+
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+
+    // 1. Currency Switcher
+    let currentCurrency = 'ETB';
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      const etbBtn = document.getElementById('curr-etb');
+      const usdBtn = document.getElementById('curr-usd');
+
+      if (curr === 'ETB') {
+        etbBtn.className = "px-3 py-1 rounded-full font-black text-white bg-brand-greenDark transition-all shadow-sm";
+        usdBtn.className = "px-3 py-1 rounded-full text-brand-slateSub hover:text-brand-greenDark transition-all font-bold";
+      } else {
+        usdBtn.className = "px-3 py-1 rounded-full font-black text-white bg-brand-greenDark transition-all shadow-sm";
+        etbBtn.className = "px-3 py-1 rounded-full text-brand-slateSub hover:text-brand-greenDark transition-all font-bold";
+      }
+
+      document.querySelectorAll('.price-val').forEach(el => {
+        el.innerText = curr === 'ETB' ? el.getAttribute('data-etb') : el.getAttribute('data-usd');
+      });
+
+      document.querySelectorAll('.price-original').forEach(el => {
+        el.innerText = curr === 'ETB' ? el.getAttribute('data-etb') : el.getAttribute('data-usd');
+      });
+
+      showToast(`Currency switched to ${curr}`);
+    }
+
+    // 2. Mobile Menu
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        iconOpen.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+    }
+
+    // 3. Interactive Pathway Finder
+    let currentStep = 1;
+    let selectedGoal = 'undergrad';
+    let selectedFormat = 'inperson';
+
+    function setFlowStep(step) {
+      currentStep = step;
+      document.getElementById('flow-step-1').classList.add('hidden');
+      document.getElementById('flow-step-2').classList.add('hidden');
+      document.getElementById('flow-step-3').classList.add('hidden');
+
+      document.getElementById(`flow-step-${step}`).classList.remove('hidden');
+
+      [1, 2, 3].forEach(s => {
+        const dot = document.getElementById(`step-btn-${s}`);
+        if (s === step) {
+          dot.className = "w-9 h-9 rounded-full bg-brand-greenDark text-white font-black text-sm flex items-center justify-center ring-4 ring-emerald-100 shadow-md";
+        } else if (s < step) {
+          dot.className = "w-9 h-9 rounded-full bg-emerald-200 text-brand-greenDeep font-black text-sm flex items-center justify-center ring-4 ring-white";
+        } else {
+          dot.className = "w-9 h-9 rounded-full bg-slate-100 text-brand-slateSub font-bold text-sm flex items-center justify-center ring-4 ring-white";
+        }
+      });
+    }
+
+    function updateFlowSelection() {
+      const radios = document.getElementsByName('flow_goal');
+      for (const r of radios) {
+        const parent = r.closest('label').querySelector('div');
+        if (r.checked) {
+          selectedGoal = r.value;
+          parent.className = "p-5 rounded-2xl border-2 border-brand-green bg-emerald-50/70 transition-all flex flex-col justify-between h-40 shadow-sm";
+          parent.querySelector('span:last-child').innerText = "Selected ✓";
+          parent.querySelector('span:last-child').className = "text-[10px] font-black text-brand-greenDark uppercase";
+        } else {
+          parent.className = "p-5 rounded-2xl border-2 border-slate-200 bg-white transition-all flex flex-col justify-between h-40 hover:border-emerald-300";
+          parent.querySelector('span:last-child').innerText = "Select";
+          parent.querySelector('span:last-child').className = "text-[10px] font-bold text-slate-400";
+        }
+      }
+    }
+
+    function updateFlowFormatSelection() {
+      const radios = document.getElementsByName('flow_format');
+      for (const r of radios) {
+        const parent = r.closest('label').querySelector('div');
+        if (r.checked) {
+          selectedFormat = r.value;
+          parent.className = "p-6 rounded-2xl border-2 border-brand-green bg-emerald-50/70 transition-all space-y-2";
+          parent.querySelector('span:last-child').innerText = "Selected ✓";
+          parent.querySelector('span:last-child').className = "inline-block text-[10px] font-black text-brand-greenDark uppercase";
+        } else {
+          parent.className = "p-6 rounded-2xl border-2 border-slate-200 bg-white transition-all space-y-2 hover:border-emerald-300";
+          parent.querySelector('span:last-child').innerText = "Select";
+          parent.querySelector('span:last-child').className = "inline-block text-[10px] font-bold text-slate-400";
+        }
+      }
+    }
+
+    function generateCustomPathway() {
+      const titleEl = document.getElementById('flow-result-title');
+      const descEl = document.getElementById('flow-result-desc');
+      const progEl = document.getElementById('flow-rec-program');
+      const timeEl = document.getElementById('flow-rec-timeline');
+      const awardEl = document.getElementById('flow-rec-award');
+      const modeEl = document.getElementById('flow-rec-mode');
+
+      modeEl.innerText = selectedFormat === 'inperson' 
+        ? "In-Person Classroom (Bole Campus, Addis Ababa)" 
+        : "Live Virtual Interactive Cohort (Zoom & LMS)";
+
+      if (selectedGoal === 'undergrad') {
+        titleEl.innerText = "US & Global Undergraduate Full-Ride Blueprint";
+        descEl.innerText = "Custom pathway designed for Ethiopian high school seniors targeting Need-Blind and Top 50 institutions.";
+        progEl.innerText = "Digital SAT 1500+ Prep + Common App Mentorship";
+        timeEl.innerText = "4 - 6 Months";
+        awardEl.innerText = "100% Tuition + Housing & Stipend";
+      } else if (selectedGoal === 'masters') {
+        titleEl.innerText = "European & North American Graduate Fellowship Path";
+        descEl.innerText = "Designed for degree holders seeking DAAD, Stipendium Hungaricum, or US Graduate Assistantships.";
+        progEl.innerText = "IELTS 7.5+ & Academic Professor Outreach Bootcamp";
+        timeEl.innerText = "3 - 5 Months";
+        awardEl.innerText = "Full Tuition Waiver + $1,800/mo Living Stipend";
+      } else if (selectedGoal === 'sat') {
+        titleEl.innerText = "Accelerated Digital SAT 1500+ Score Target";
+        descEl.innerText = "Intensive formula mastering Desmos shortcuts, Bluebook pacing, and high-frequency math patterns.";
+        progEl.innerText = "Digital SAT Complete Masterclass";
+        timeEl.innerText = "8 - 10 Weeks";
+        awardEl.innerText = "Target Score: 1500+ Guaranteed";
+      } else {
+        titleEl.innerText = "IELTS Band 7.5 - 8.5 Language Mastery Program";
+        descEl.innerText = "Certified British Council coaching with 1-on-1 speaking interview practice and writing band-9 templates.";
+        progEl.innerText = "IELTS Academic Complete Accelerator";
+        timeEl.innerText = "6 - 8 Weeks";
+        awardEl.innerText = "Band 7.5+ Score Guarantee";
+      }
+
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    // 4. Course Filtering
+    function filterCourses(category) {
+      document.querySelectorAll('.course-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.className = "course-filter-btn px-4 py-2 rounded-full text-xs font-black bg-brand-greenDark text-white shadow-sm";
+        } else {
+          btn.className = "course-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-brand-slateSub border border-slate-200 hover:bg-slate-50";
+        }
+      });
+
+      document.querySelectorAll('.course-card').forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 5. Modals
+    function openBookingModal(source = 'General') {
+      const modal = document.getElementById('booking-modal');
+      const select = document.getElementById('modal-program-select');
+      modal.classList.remove('hidden');
+      if (source.includes('SAT')) select.value = 'SAT Prep';
+      if (source.includes('IELTS')) select.value = 'IELTS Prep';
+      if (source.includes('Scholarship') || source.includes('Full-Ride') || source.includes('Opportunities')) select.value = 'Full Scholarship';
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    function closeBookingModal() {
+      document.getElementById('booking-modal').classList.add('hidden');
+    }
+
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      closeBookingModal();
+      showToast("🎉 Consultation request received! Our Bole team will reach out via Telegram/Phone.");
+    }
+
+    function openCourseModal(title, price, duration, instructor) {
+      document.getElementById('cmodal-title').innerText = title;
+      document.getElementById('cmodal-price').innerText = price;
+      document.getElementById('cmodal-duration').innerText = duration;
+      document.getElementById('cmodal-instructor').innerText = `Instructor: ${instructor}`;
+      document.getElementById('course-modal').classList.remove('hidden');
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    function closeCourseModal() {
+      document.getElementById('course-modal').classList.add('hidden');
+    }
+
+    function enrollInCourse() {
+      closeCourseModal();
+      openBookingModal('Course Direct Purchase');
+      showToast("Course reserved! Proceed with Telebirr / CBE payment instructions.");
+    }
+
+    function viewAcceptanceLetter(student, uni, award, major, score) {
+      document.getElementById('amodal-student').innerText = student;
+      document.getElementById('amodal-university').innerText = uni;
+      document.getElementById('amodal-award').innerText = award;
+      document.getElementById('amodal-major').innerText = major;
+      document.getElementById('amodal-score').innerText = score;
+      document.getElementById('acceptance-modal').classList.remove('hidden');
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    function closeAcceptanceModal() {
+      document.getElementById('acceptance-modal').classList.add('hidden');
+    }
+
+    // 6. Toast Notification
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const msg = document.getElementById('toast-msg');
+      msg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 4000);
+    }
+
+    // ESC key closes modals
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeBookingModal();
+        closeCourseModal();
+        closeAcceptanceModal();
+      }
+    });
+  </script>
+</body>
+</html>
