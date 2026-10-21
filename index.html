@@ -215,113 +215,119 @@
   </header>
 
 
-  <!-- HERO SECTION: High-Contrast, Clean & Readable with Airplane Flight Animation -->
-  <section id="hero-section" class="relative min-h-[88vh] lg:min-h-[calc(100vh-80px)] w-full overflow-hidden bg-gradient-to-b from-[#F0FDF4] via-white to-[#F8FAF8] flex flex-col justify-between">
+  <!-- HERO SECTION: Text on the Left, Illustration Shifted to the Right (OHUBET Style) -->
+  <section id="hero-section" class="relative min-h-[88vh] lg:min-h-[calc(100vh-80px)] w-full overflow-hidden flex flex-col justify-between">
     
-    <!-- ANIMATED AIRPLANE & CLOUDS BACKGROUND LAYER -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <!-- FULL BACKGROUND: Clean White Gradient on the Left, Illustration Shifted to the Right -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
       
-      <!-- Subtle Golden Sun Glow in Top Corner -->
-      <div class="absolute -top-24 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl"></div>
-      <div class="absolute top-10 left-10 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl"></div>
+      <!-- Base Soft Clean Background -->
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white to-[#F0FDF4]"></div>
 
-      <!-- Drifting Soft Clouds (Simple, Clean, Atmospheric) -->
-      <div class="absolute top-12 left-0 animate-cloud-drift-1 opacity-70">
+      <!-- Right-Shifted Illustration: Globe, Ethiopian Scholar & Landmarks -->
+      <div class="absolute inset-y-0 right-0 w-full lg:w-[68%] xl:w-[64%]">
+        <img src="hero_meadow.jpg" alt="Scholarship Meadow with World Globe and Ethiopian Scholar" class="w-full h-full object-cover object-left-bottom lg:object-center opacity-95" loading="eager">
+        
+        <!-- Smooth horizontal gradient fade on the left edge of the image so it melts seamlessly into the left text zone -->
+        <div class="absolute inset-y-0 left-0 w-36 sm:w-56 lg:w-80 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        <div class="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-white/70 to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-emerald-50/90 to-transparent"></div>
+      </div>
+
+      <!-- Left Solid White Overlay Gradient to ensure 100% zero overlap behind text on all screens -->
+      <div class="absolute inset-y-0 left-0 w-full lg:w-[48%] xl:w-[45%] bg-gradient-to-r from-white via-white/95 to-transparent"></div>
+
+      <!-- Drifting Clouds in the sky -->
+      <div class="absolute top-10 left-1/4 animate-cloud-drift-1 opacity-70">
         <svg width="180" height="60" viewBox="0 0 180 60" fill="white">
           <path d="M20,45 Q10,45 10,35 Q10,25 22,25 Q28,10 48,15 Q65,5 82,18 Q98,8 115,20 Q130,12 145,22 Q160,18 165,30 Q175,32 170,45 Z" fill="#E2FBEA" opacity="0.6"/>
         </svg>
       </div>
 
-      <div class="absolute top-36 left-0 animate-cloud-drift-2 opacity-60">
+      <div class="absolute top-28 left-1/3 animate-cloud-drift-2 opacity-50">
         <svg width="220" height="70" viewBox="0 0 220 70" fill="white">
           <path d="M25,50 Q12,50 12,38 Q12,28 25,28 Q32,12 55,18 Q75,6 95,20 Q112,10 132,22 Q150,14 168,25 Q185,20 190,34 Q205,36 198,50 Z" fill="#FEF9C3" opacity="0.4"/>
         </svg>
       </div>
 
-      <div class="absolute top-24 left-0 animate-cloud-drift-3 opacity-50">
-        <svg width="150" height="50" viewBox="0 0 150 50" fill="white">
-          <path d="M15,40 Q8,40 8,30 Q8,20 20,20 Q25,8 42,12 Q58,4 72,15 Q85,8 100,18 Q115,12 125,20 Q135,18 138,28 Q145,30 140,40 Z" fill="#E2FBEA" opacity="0.5"/>
-        </svg>
-      </div>
-
       <!-- SOARING AIRPLANE WITH GOLDEN CONTRAIL ANIMATION -->
-      <div class="absolute top-16 left-0 animate-plane-flight z-10 flex items-center">
+      <div class="absolute top-8 left-0 animate-plane-flight z-20 flex items-center">
         <!-- Golden Contrail Line -->
         <svg width="180" height="40" viewBox="0 0 180 40" class="overflow-visible -mr-2">
           <path d="M0,20 Q90,12 180,20" fill="none" stroke="#FBBF24" stroke-width="2.5" class="flight-trail-line" stroke-linecap="round"/>
         </svg>
-        <!-- Sleek Modern Jet Airliner -->
+        <!-- Sleek Jet Airliner -->
         <div class="relative drop-shadow-lg flex items-center">
-          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
             <!-- Jet Body -->
             <path d="M10,32 L26,30 L46,24 Q56,21 58,32 Q56,43 46,40 L26,34 L10,32 Z" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
             <!-- Main Wings -->
             <polygon points="34,29 18,10 26,10 44,27" fill="#10B981" stroke="#059669" stroke-width="1.5"/>
             <polygon points="34,35 18,54 26,54 44,37" fill="#059669" stroke="#047857" stroke-width="1.5"/>
-            <!-- Tail Fin (Golden Yellow matching crown) -->
+            <!-- Tail Fin -->
             <polygon points="14,31 4,16 10,16 20,31" fill="#F59E0B" stroke="#D97706" stroke-width="1.5"/>
             <!-- Cockpit Windows -->
             <path d="M50,29 Q54,32 50,35" stroke="#0F2E4A" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
-          <!-- Floating Scholarship Destination Tag -->
+          <!-- Destination Tag -->
           <span class="ml-2 px-2.5 py-1 rounded-full bg-white/95 border-2 border-emerald-300 text-[10px] font-black text-brand-greenDeep shadow-md whitespace-nowrap">
             ✈️ Flight to Global Full-Ride
           </span>
         </div>
       </div>
 
-      <!-- Gentle Bottom Meadow Slope Gradient (Keeping colors light green, yellow & white) -->
-      <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-emerald-50 via-emerald-50/40 to-transparent"></div>
-
     </div>
 
-    <!-- Centered High-Contrast Hero Typography (Zero Visual Clutter Behind Text) -->
-    <div class="relative z-10 flex-1 flex items-center justify-center py-10 lg:py-16 text-center">
-      <div class="max-w-4xl mx-auto px-6 lg:px-8">
+    <!-- LEFT-ALIGNED HERO CONTENT (Clean, Crisp & Zero Overlap with the Illustration on the Right) -->
+    <div class="relative z-10 w-full max-w-[1550px] mx-auto px-6 sm:px-10 lg:px-14 py-8 lg:py-16 flex-1 flex items-center">
+      <div class="max-w-2xl text-left space-y-5">
         
-        <!-- Top Pill Badge (High-Contrast Yellow & Green) -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border-2 border-emerald-300 text-xs font-black text-brand-navyText shadow-sm mb-6">
-          <span class="text-brand-yellow font-black">👑</span>
+        <!-- Top Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 backdrop-blur-md border-2 border-emerald-300 text-xs font-black text-brand-navyText shadow-sm">
+          <span class="text-brand-yellow font-black text-sm">👑</span>
           <span class="tracking-wide">ETHIOPIA'S PREMIER SCHOLARSHIP ARCHITECT</span>
-          <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-ping"></span>
+          <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
         </div>
 
-        <!-- Main Headline (Deep Navy Text on Clean White Background = 100% Readability) -->
-        <h1 class="text-4xl sm:text-6xl md:text-7xl font-black leading-tight tracking-tight text-brand-navyText">
+        <!-- Main Headline (Left-Aligned, Big, Bold Navy & Green) -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight text-brand-navyText">
           Your Future. <br>
           <span class="text-brand-green">Without Borders.</span>
         </h1>
 
-        <!-- Supporting Subtext (Slate-700 with optimal contrast and spacing) -->
-        <p class="mt-5 text-base sm:text-xl text-brand-slateSub max-w-2xl mx-auto font-medium leading-relaxed">
+        <!-- Supporting Subtext -->
+        <p class="text-base sm:text-lg lg:text-xl text-brand-slateSub font-medium leading-relaxed max-w-xl">
           We consult Ethiopian students to unlock global opportunities through full-ride scholarships, Digital SAT mastery, and prestigious university placements.
         </p>
         
-        <p class="mt-2 text-base sm:text-lg font-black text-brand-greenDark">
+        <p class="text-base sm:text-lg font-black text-brand-greenDark flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-brand-yellow"></span>
           Your dream, our precision guidance.
         </p>
 
-        <!-- Clean Action Buttons (High Contrast: Yellow + White) -->
-        <div class="mt-8 flex flex-row flex-wrap items-center gap-4 justify-center">
-          <button onclick="openBookingModal('Hero Explore Opportunities')" class="group text-center bg-brand-yellow hover:bg-amber-400 text-brand-navyText font-black px-8 py-4 rounded-full shadow-lg shadow-amber-500/25 transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95 flex items-center gap-2">
+        <!-- Clean Action Buttons (Left-Aligned) -->
+        <div class="pt-2 flex flex-row flex-wrap items-center gap-4">
+          <button onclick="openBookingModal('Hero Explore Opportunities')" class="group bg-brand-yellow hover:bg-amber-400 text-brand-navyText font-black px-8 py-4 rounded-full shadow-lg shadow-amber-500/25 transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95 flex items-center gap-2">
             <span>Explore Opportunities</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1 text-brand-navyText"></i>
+            <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
           </button>
           
-          <button onclick="openBookingModal('Hero Book Consultation')" class="text-center bg-white hover:bg-emerald-50 text-brand-greenDark font-black px-8 py-4 rounded-full border-2 border-brand-green shadow-md transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95">
+          <button onclick="openBookingModal('Hero Book Consultation')" class="bg-white hover:bg-emerald-50 text-brand-greenDark font-black px-8 py-4 rounded-full border-2 border-brand-green shadow-md transition-all text-sm sm:text-base whitespace-nowrap hover:scale-105 active:scale-95">
             Book a Consultation
           </button>
         </div>
 
-        <!-- High-Contrast Proof Bar -->
-        <div class="mt-10 inline-flex flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 py-2.5 rounded-full bg-white border-2 border-emerald-200 text-xs font-extrabold text-brand-navyText shadow-sm">
-          <span class="flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-brand-greenDark"></i> 180+ Full-Rides</span>
-          <span class="text-emerald-200 hidden sm:inline">•</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4 text-brand-greenDark"></i> 50+ Countries</span>
-          <span class="text-emerald-200 hidden sm:inline">•</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow"></i> Bole Medhanialem Lab</span>
-          <span class="text-emerald-200 hidden sm:inline">•</span>
-          <span class="flex items-center gap-1.5"><i data-lucide="wallet" class="w-4 h-4 text-brand-greenDark"></i> Telebirr & CBE</span>
+        <!-- High-Contrast Proof Bar (Left-Aligned) -->
+        <div class="pt-2">
+          <div class="inline-flex flex-wrap items-center gap-x-5 gap-y-2 px-5 py-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-emerald-200 text-xs font-extrabold text-brand-navyText shadow-sm">
+            <span class="flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-brand-greenDark"></i> 180+ Full-Rides</span>
+            <span class="text-emerald-300 hidden sm:inline">•</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4 text-brand-greenDark"></i> 50+ Countries</span>
+            <span class="text-emerald-300 hidden sm:inline">•</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-brand-yellow"></i> Bole Medhanialem Lab</span>
+            <span class="text-emerald-300 hidden sm:inline">•</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="wallet" class="w-4 h-4 text-brand-greenDark"></i> Telebirr & CBE</span>
+          </div>
         </div>
 
       </div>
