@@ -111,14 +111,38 @@
       transform: translateY(-4px);
     }
 
-    /* Flight Path Animated Dashes */
-    .flight-trail-line {
-      stroke-dasharray: 8, 8;
-      animation: dashMove 2s linear infinite;
+    /* Living Hero Transformation: Scholar turns his face and holds the world */
+    .hero-stage-contemplating {
+      animation: scholarContemplate 8s ease-in-out infinite;
+      will-change: opacity;
     }
-    @keyframes dashMove {
-      from { stroke-dashoffset: 32; }
-      to { stroke-dashoffset: 0; }
+    .hero-stage-holding {
+      animation: scholarHoldWorld 8s ease-in-out infinite;
+      will-change: opacity;
+    }
+
+    @keyframes scholarContemplate {
+      0%, 42% {
+        opacity: 1;
+      }
+      50%, 92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes scholarHoldWorld {
+      0%, 42% {
+        opacity: 0;
+      }
+      50%, 92% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   </style>
 </head>
@@ -218,56 +242,21 @@
   <!-- HERO SECTION: Full-Bleed Mature Adult-Vibe Hero Background with Text in Left Corner -->
   <section id="hero-section" class="relative min-h-[90vh] lg:min-h-[calc(100vh-80px)] w-full overflow-hidden flex flex-col justify-between">
     
-    <!-- FULL-BLEED BACKGROUND IMAGE LAYER (Mature Adult Vibe) -->
+    <!-- FULL-BLEED LIVING BACKGROUND LAYER: Scholar turns his face and holds the world -->
     <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-      <!-- Full-bleed Scenic Illustration (Scholar & Globe on Right, Open Sky on Left) -->
-      <img src="hero_adult.jpg" alt="Negus Consultants International Education & Scholarship Hero" class="w-full h-full object-cover object-bottom lg:object-center" loading="eager">
       
-      <!-- Subtle Soft Left-Sky Wash ensuring supreme text contrast while keeping background 100% visible -->
-      <div class="absolute inset-y-0 left-0 w-full lg:w-[55%] bg-gradient-to-r from-white/90 via-white/60 to-transparent"></div>
+      <!-- Stage 1: Contemplating the Future & Looking toward the Global Horizon -->
+      <img src="hero_adult.jpg" alt="Scholar Looking Toward Global Opportunities" class="absolute inset-0 w-full h-full object-cover object-bottom lg:object-center hero-stage-contemplating" loading="eager">
+
+      <!-- Stage 2: Scholar Turns Face Toward Viewer, Smiling & Holding the World Globe in His Hands -->
+      <img src="hero_holding_world.jpg" alt="Scholar Turning Face and Holding World Globe" class="absolute inset-0 w-full h-full object-cover object-bottom lg:object-center hero-stage-holding" loading="eager">
+
+      <!-- Soft Left-Side White Overlay ensuring 100% supreme text contrast in the left corner -->
+      <div class="absolute inset-y-0 left-0 w-full lg:w-[52%] xl:w-[48%] bg-gradient-to-r from-white via-white/85 to-transparent"></div>
       
       <!-- Top Subtle Sky Vignette & Bottom Meadow Blend -->
-      <div class="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-white/70 via-white/30 to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/70 via-white/30 to-transparent"></div>
       <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-emerald-50/80 to-transparent"></div>
-
-      <!-- Drifting Clouds in the sky -->
-      <div class="absolute top-10 left-1/4 animate-cloud-drift-1 opacity-60">
-        <svg width="180" height="60" viewBox="0 0 180 60" fill="white">
-          <path d="M20,45 Q10,45 10,35 Q10,25 22,25 Q28,10 48,15 Q65,5 82,18 Q98,8 115,20 Q130,12 145,22 Q160,18 165,30 Q175,32 170,45 Z" fill="#E2FBEA" opacity="0.6"/>
-        </svg>
-      </div>
-
-      <div class="absolute top-28 left-1/3 animate-cloud-drift-2 opacity-40">
-        <svg width="220" height="70" viewBox="0 0 220 70" fill="white">
-          <path d="M25,50 Q12,50 12,38 Q12,28 25,28 Q32,12 55,18 Q75,6 95,20 Q112,10 132,22 Q150,14 168,25 Q185,20 190,34 Q205,36 198,50 Z" fill="#FEF9C3" opacity="0.4"/>
-        </svg>
-      </div>
-
-      <!-- SOARING AIRPLANE WITH GOLDEN CONTRAIL ANIMATION -->
-      <div class="absolute top-8 left-0 animate-plane-flight z-20 flex items-center">
-        <!-- Golden Contrail Line -->
-        <svg width="180" height="40" viewBox="0 0 180 40" class="overflow-visible -mr-2">
-          <path d="M0,20 Q90,12 180,20" fill="none" stroke="#FBBF24" stroke-width="2.5" class="flight-trail-line" stroke-linecap="round"/>
-        </svg>
-        <!-- Sleek Jet Airliner -->
-        <div class="relative drop-shadow-lg flex items-center">
-          <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
-            <!-- Jet Body -->
-            <path d="M10,32 L26,30 L46,24 Q56,21 58,32 Q56,43 46,40 L26,34 L10,32 Z" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
-            <!-- Main Wings -->
-            <polygon points="34,29 18,10 26,10 44,27" fill="#10B981" stroke="#059669" stroke-width="1.5"/>
-            <polygon points="34,35 18,54 26,54 44,37" fill="#059669" stroke="#047857" stroke-width="1.5"/>
-            <!-- Tail Fin -->
-            <polygon points="14,31 4,16 10,16 20,31" fill="#F59E0B" stroke="#D97706" stroke-width="1.5"/>
-            <!-- Cockpit Windows -->
-            <path d="M50,29 Q54,32 50,35" stroke="#0F2E4A" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <!-- Destination Tag -->
-          <span class="ml-2 px-2.5 py-1 rounded-full bg-white/95 border-2 border-emerald-300 text-[10px] font-black text-brand-greenDeep shadow-md whitespace-nowrap">
-            ✈️ Flight to Global Full-Ride
-          </span>
-        </div>
-      </div>
 
     </div>
 
@@ -1698,6 +1687,13 @@
         closeAcceptanceModal();
       }
     });
+
+    // Ensure Hero Background Video Autoplays
+    const heroVid = document.getElementById('hero-video');
+    if (heroVid) {
+      heroVid.muted = true;
+      heroVid.play().catch(() => {});
+    }
   </script>
 </body>
 </html>
