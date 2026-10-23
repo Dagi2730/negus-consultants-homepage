@@ -4498,9 +4498,9 @@
 
     // Theme Mode Toggle (Light / Dark)
     function initTheme() {
-      const savedTheme = localStorage.getItem('negus_theme');
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const isDark = (savedTheme === 'dark' || (!savedTheme && prefersDark));
+      // Default to Light Mode when the website is opened
+      const savedTheme = localStorage.getItem('negus_user_theme');
+      const isDark = (savedTheme === 'dark');
       if (isDark) {
         document.documentElement.classList.add('dark');
       } else {
@@ -4515,7 +4515,7 @@
 
     function toggleTheme() {
       const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('negus_theme', isDark ? 'dark' : 'light');
+      localStorage.setItem('negus_user_theme', isDark ? 'dark' : 'light');
       const switchBtn = document.getElementById('theme-switch');
       if (switchBtn) {
         switchBtn.setAttribute('aria-checked', isDark ? 'true' : 'false');
