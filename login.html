@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Negus Consultants Student Portal</title>
+  <meta name="description" content="Access your Negus Consultants student portal for application roadmaps, SAT/IELTS preparation, and essay reviews.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --white: #FFFFFF;
+      --green-50: #F3FAEA;
+      --green-100: #E3F4CE;
+      --green-300: #B7E48A;
+      --green-600: #4C8A2B;
+      --yellow-400: #FFD23F;
+      --yellow-100: #FFF4C2;
+      --ink-900: #19231A;
+      --ink-600: #4A564B;
+      --line: #E4EBDD;
+
+      --font-heading: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+      --font-body: 'DM Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, sans-serif;
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --radius-full: 9999px;
+
+      --transition-fast: 0.15s ease;
+      --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html.dark {
+      --white: #121A13;
+      --green-50: #162417;
+      --green-100: #1E3320;
+      --green-300: #558737;
+      --green-600: #7CBF54;
+      --ink-900: #F3F8F2;
+      --ink-600: #B4C4B5;
+      --line: #263828;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--green-50);
+      background: radial-gradient(circle at top right, var(--green-100) 0%, var(--green-50) 60%, var(--white) 100%);
+      color: var(--ink-900);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .standalone-nav {
+      width: 100%;
+      max-width: 490px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .back-home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--green-600);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: transform var(--transition-fast);
+    }
+
+    .back-home-link:hover {
+      transform: translateX(-2px);
+      text-decoration: underline;
+    }
+
+    .theme-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-full);
+      padding: 6px 8px;
+      cursor: pointer;
+      color: var(--ink-600);
+      background-color: var(--white);
+      min-height: 40px;
+      min-width: 40px;
+    }
+
+    .theme-switch-track {
+      width: 44px;
+      height: 22px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4px;
+    }
+
+    .theme-switch-thumb {
+      position: absolute;
+      left: 2px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: var(--yellow-400);
+      transition: transform var(--transition-smooth);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    html.dark .theme-switch-thumb {
+      transform: translateX(22px);
+      background-color: var(--green-300);
+    }
+
+    .modal-card {
+      background-color: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 490px;
+      padding: 32px 34px 36px;
+      position: relative;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+    }
+
+    .portal-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+    }
+
+    .portal-brand-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .portal-logo-icon {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .portal-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portal-brand-name {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--ink-900);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .portal-brand-badge {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--green-600);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .portal-tabs-track {
+      display: flex;
+      background-color: var(--green-50);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-full);
+      padding: 4px;
+      margin-bottom: 24px;
+      gap: 4px;
+    }
+
+    .portal-tab-pill {
+      flex: 1;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      border: none;
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--ink-600);
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-align: center;
+      min-height: 40px;
+    }
+
+    .portal-tab-pill.active {
+      background-color: var(--white);
+      color: var(--ink-900);
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .portal-panel-title {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--ink-900);
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .portal-panel-subtitle {
+      font-size: 14px;
+      color: var(--ink-600);
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    .portal-field-group {
+      margin-bottom: 16px;
+    }
+
+    .portal-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .portal-field-label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink-900);
+      margin-bottom: 6px;
+    }
+
+    .portal-forgot-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green-600);
+      text-decoration: none;
+    }
+
+    .portal-forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .portal-field-input,
+    .portal-field-select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background-color: var(--white);
+      color: var(--ink-900);
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      outline: none;
+    }
+
+    .portal-field-input:focus,
+    .portal-field-select:focus {
+      border-color: var(--green-600);
+      box-shadow: 0 0 0 3px rgba(76, 138, 43, 0.15);
+    }
+
+    .portal-remember-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 18px 0 22px;
+    }
+
+    .portal-checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--ink-600);
+      cursor: pointer;
+    }
+
+    .portal-checkbox-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--green-600);
+    }
+
+    .portal-submit-btn {
+      width: 100%;
+      background-color: var(--yellow-400);
+      color: var(--ink-900);
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 13px 20px;
+      border-radius: var(--radius-full);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: 0 2px 8px rgba(255, 210, 63, 0.25);
+      min-height: 48px;
+    }
+
+    .portal-submit-btn:hover {
+      background-color: #F5C72E;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(255, 210, 63, 0.35);
+    }
+
+    .portal-footer-switch {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13.5px;
+      color: var(--ink-600);
+    }
+
+    .portal-switch-link {
+      background: none;
+      border: none;
+      color: var(--green-600);
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0 2px;
+      text-decoration: none;
+    }
+
+    .portal-switch-link:hover {
+      text-decoration: underline;
+    }
+
+    .portal-status-alert {
+      display: none;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      margin-bottom: 18px;
+      font-size: 13.5px;
+      line-height: 1.4;
+    }
+
+    .portal-status-alert.success {
+      display: block;
+      background-color: var(--green-100);
+      border: 1px solid var(--green-300);
+      color: var(--ink-900);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="standalone-nav">
+    <a href="index.html" class="back-home-link">
+      <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+      <span>Back to Homepage</span>
+    </a>
+
+    <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Switch theme">
+      <span class="theme-switch-track">
+        <i data-lucide="sun" style="width: 12px; height: 12px;"></i>
+        <i data-lucide="moon" style="width: 12px; height: 12px;"></i>
+        <span class="theme-switch-thumb"></span>
+      </span>
+    </button>
+  </div>
+
+  <div class="modal-card">
+    <div class="portal-modal-header">
+      <div class="portal-brand-row">
+        <img src="logo.png" onerror="this.onerror=null; this.src='negus_logo.png';" alt="Negus Logo" class="portal-logo-icon">
+        <div class="portal-brand-text">
+          <span class="portal-brand-name">NEGUS</span>
+          <span class="portal-brand-badge">STUDENT PORTAL</span>
+        </div>
+      </div>
+      <a href="index.html" class="back-home-link" style="color: var(--ink-600);">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </a>
+    </div>
+
+    <div class="portal-tabs-track" role="tablist">
+      <button class="portal-tab-pill active" id="tab-btn-signin" role="tab" aria-selected="true" onclick="switchAuthTab('login')">
+        Sign In
+      </button>
+      <button class="portal-tab-pill " id="tab-btn-register" role="tab" aria-selected="false" onclick="switchAuthTab('register')">
+        Register
+      </button>
+    </div>
+
+    <div id="portal-alert" class="portal-status-alert"></div>
+
+    <!-- SIGN IN PANEL -->
+    <div id="auth-panel-login" class="portal-form-panel" style="display: block;">
+      <h3 class="portal-panel-title">Student Portal Login</h3>
+      <p class="portal-panel-subtitle">Access your courses, application roadmap, and essay revisions.</p>
+
+      <form onsubmit="handleSubmit(event, 'Signed in successfully!')">
+        <div class="portal-field-group">
+          <label class="portal-field-label" for="login-id">Email Address or Student ID *</label>
+          <input type="text" id="login-id" class="portal-field-input" placeholder="e.g. melat@example.com" required>
+        </div>
+
+        <div class="portal-field-group">
+          <div class="portal-label-row">
+            <label class="portal-field-label" for="login-password">Password *</label>
+            <a href="javascript:void(0)" onclick="alert('Password reset link sent to your email.');" class="portal-forgot-link">Forgot?</a>
+          </div>
+          <input type="password" id="login-password" class="portal-field-input" placeholder="••••••••" required>
+        </div>
+
+        <div class="portal-remember-row">
+          <label class="portal-checkbox-label">
+            <input type="checkbox" checked>
+            <span>Remember this device</span>
+          </label>
+        </div>
+
+        <button type="submit" class="portal-submit-btn">
+          <span>Sign In to Student Portal</span>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+        </button>
+
+        <div class="portal-footer-switch">
+          Don't have an account yet? <button type="button" class="portal-switch-link" onclick="switchAuthTab('register')">Register now</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- REGISTER PANEL -->
+    <div id="auth-panel-register" class="portal-form-panel" style="display: none;">
+      <h3 class="portal-panel-title">Create Student Account</h3>
+      <p class="portal-panel-subtitle">Join thousands of Ethiopian scholars preparing for study abroad.</p>
+
+      <form onsubmit="handleSubmit(event, 'Account created successfully!')">
+        <div class="portal-field-group">
+          <label class="portal-field-label">Full Name *</label>
+          <input type="text" class="portal-field-input" placeholder="e.g. Melat Bekele" required>
+        </div>
+
+        <div class="portal-field-group">
+          <label class="portal-field-label">Email Address *</label>
+          <input type="email" class="portal-field-input" placeholder="e.g. melat@example.com" required>
+        </div>
+
+        <div class="portal-field-group">
+          <label class="portal-field-label">Phone / Telegram Handle *</label>
+          <input type="text" class="portal-field-input" placeholder="e.g. +251 9... or @username" required>
+        </div>
+
+        <div class="portal-field-group">
+          <label class="portal-field-label">Primary Area of Interest</label>
+          <select class="portal-field-select">
+            <option value="admissions" selected>Scholarships & University Admissions</option>
+            <option value="sat">Digital SAT Preparation</option>
+            <option value="ielts">IELTS Academic Coaching</option>
+            <option value="essays">Essay Writing & Review (2,000 Birr Package)</option>
+            <option value="mentorship">Full Application Mentorship</option>
+            <option value="advisory">General Guidance & Planning</option>
+          </select>
+        </div>
+
+        <div class="portal-field-group">
+          <label class="portal-field-label">Create Password *</label>
+          <input type="password" class="portal-field-input" placeholder="Minimum 6 characters" minlength="6" required>
+        </div>
+
+        <button type="submit" class="portal-submit-btn">
+          <span>Create Student Account</span>
+          <i data-lucide="check" style="width: 18px; height: 18px;"></i>
+        </button>
+
+        <div class="portal-footer-switch">
+          Already have an account? <button type="button" class="portal-switch-link" onclick="switchAuthTab('login')">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const isDark = html.classList.toggle('dark');
+      try {
+        localStorage.setItem('negus_theme', isDark ? 'dark' : 'light');
+      } catch (e) {}
+    }
+
+    // Check stored theme
+    try {
+      if (localStorage.getItem('negus_theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    } catch(e) {}
+
+    function switchAuthTab(mode) {
+      const pLogin = document.getElementById('auth-panel-login');
+      const pReg = document.getElementById('auth-panel-register');
+      const tIn = document.getElementById('tab-btn-signin');
+      const tReg = document.getElementById('tab-btn-register');
+
+      if (mode === 'login') {
+        pLogin.style.display = 'block';
+        pReg.style.display = 'none';
+        tIn.classList.add('active');
+        tIn.setAttribute('aria-selected', 'true');
+        tReg.classList.remove('active');
+        tReg.setAttribute('aria-selected', 'false');
+      } else {
+        pLogin.style.display = 'none';
+        pReg.style.display = 'block';
+        tIn.classList.remove('active');
+        tIn.setAttribute('aria-selected', 'false');
+        tReg.classList.add('active');
+        tReg.setAttribute('aria-selected', 'true');
+      }
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function handleSubmit(e, msg) {
+      e.preventDefault();
+      const alertBox = document.getElementById('portal-alert');
+      alertBox.className = 'portal-status-alert success';
+      alertBox.textContent = msg + ' Redirecting to homepage...';
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1200);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
