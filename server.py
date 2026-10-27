@@ -1,8 +1,8 @@
-﻿import http.server
+import http.server
 import socketserver
 import sys
 
-PORT = 8089
+PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8080
 
 class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -14,11 +14,11 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
 socketserver.TCPServer.allow_reuse_address = True
 try:
     with socketserver.TCPServer(("", PORT), NoCacheHandler) as httpd:
-        print(f"Serving no-cache on port {PORT}")
+        print(f"Serving Negus Consultants at http://localhost:{PORT}")
         httpd.serve_forever()
 except Exception as e:
-    print(f"Port {PORT} busy, trying 8090: {e}")
-    PORT = 8090
+    print(f"Port {PORT} busy or error: {e}")
+    PORT = 8081
     with socketserver.TCPServer(("", PORT), NoCacheHandler) as httpd:
-        print(f"Serving no-cache on port {PORT}")
+        print(f"Serving Negus Consultants fallback at http://localhost:{PORT}")
         httpd.serve_forever()
