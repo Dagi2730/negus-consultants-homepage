@@ -1,89 +1,64 @@
-# Negus Consultants Homepage: Design Assumptions, Sources & Questions
+# Negus Consultants: Assumptions, Placeholders & Client Open Questions
 
-This document records the design assumptions, sources of truth, placeholders, and client questions for the Negus Consultants homepage redesign. Per the Master Prompt and Revision Brief, internal and developer notes are maintained here rather than on the public-facing homepage.
+This document records all placeholders, open questions, and unverified items following the content cleanup to ensure 100% honesty and alignment with the client brief and the real Negus Consultants website.
 
 ---
 
-## 1. Sources of Truth Applied
-
-All claims, facts, names, and contact details on the homepage originate strictly from:
-1. The client brief (homepage redesign brief for Negus Consultants).
-2. The live site `https://negusconsultants.com`.
-
-### Verified Content Included:
-- **Brand & Tagline**:
-  - Name: Negus Consultants
-  - Tagline: *"Study abroad guidance, scholarships, mentorship, and practical resources to succeed."*
-- **Hero Message**:
-  - *"Your clear path to scholarships abroad."*
-  - Supporting text: *"Join thousands of ambitious students using our mentorship, essay coaching, and step-by-step guidance to secure life-changing university scholarships and graduate debt-free."*
-- **Accepted Universities (Proven Track Record)**:
-  - New York University
-  - Sarah Lawrence
-  - Hult Business School
-  - Clark University
-  - Canisius University
-  - Drexel University
-  - Accompanied by the institutional disclaimer: *"Results vary. Outcomes depend on each student's profile, effort and institutional funding."*
-- **Approved Students**:
-  - Abrham
-  - Ahmed
-  - Melat (*Drexel University, Computer Science*)
-  - Yohannes
-  - Leulseged
-- **Verified Package**:
-  - **Essay Writing Package**: 2,000 Birr one-time (previously 2,500 Birr). Includes personal statement, institutional supplemental essays, multiple revisions, editable formats, strategy consultation, and Common App setup.
-- **Service Categories**:
-  - Essay Writing Package
-  - Mentorship & Guidance (*"Perfect for independent students who want expert guidance."*)
-  - Full Application Support (*"Complete end-to-end assistance with your university applications."*)
-  - Additional Services (*"Need something specific? Our expert team can help with custom solutions."*)
-- **Institutional Policy**:
-  - *"Cancel anytime — No hidden fees — 30-day money-back guarantee."*
-- **Contact Details**:
+## 1. Verified Real Offers & Details
+- **Organization Name**: Negus Consultants
+- **Headquarters / Base**: Addis Ababa, Ethiopia
+- **Leadership / Advisor Mentioned in Materials**: Abrham Sinshaw (advisory articles and mentorship guidance).
+- **Core Real Offer**:
+  - **Essay Writing Package**: Fixed price of **2,000 Birr** (strikethrough regular rate of 2,500 Birr).
+  - Scope: Personal statement and supplementals, multiple revisions and editable formats, strategy consultation, and Common App setup.
+- **Real Service Categories (Titles & Taglines Verified)**:
+  - Mentorship & Guidance ("Perfect for independent students who want expert guidance")
+  - Full Application Support ("Complete end-to-end assistance with your university applications")
+  - Additional Services ("Need something specific? Our expert team can help with custom solutions")
+  - General Scholarship Training (Flagship program)
+- **Verified Contact Channels**:
   - Phone: `+251 964730248` / `+251 943041418`
-  - Telegram: `@Negushelpcenter`
-  - Channel: `https://t.me/NEGUSCONSULTANTS`
+  - Telegram Support: `@Negushelpcenter`
+  - Telegram Community: `https://t.me/NEGUSCONSULTANTS`
+  - Official TikTok: `https://www.tiktok.com/@negus.consultant`
+  - Official Instagram: `https://www.instagram.com/negusconsultants/`
+  - Official YouTube: `https://www.youtube.com/@negusconsultants`
   - Email: `contact@negusconsultants.com`
-- **Free Educational Content (Three real posts by Abrham Sinshaw, category "Tips")**:
-  - *"Navigating the ISFAA and CSS Profile"*
-  - *"Managing the Portal Panic: Organizing Logins, Links, and Letters of the application"*
-  - *"The Reality Check on Your College List"*
+- **Universities with Admitted Students**:
+  - New York University
+  - Sarah Lawrence College
+  - Drexel University (Melat - Computer Science)
+  - Clark University
+  - Hult International Business School
+  - Canisius University
 
 ---
 
-## 2. Removals & Zero AI Imagery Compliance
-
-The visual system is **100% vector- and type-led**:
-- **Zero AI-generated imagery or scenes**: Removed all previous raster backgrounds (`hero_refined_scene.jpg`, `path_scene.jpg`, hills, acacia trees, airplane, cartoon/illustrated students).
-- **Zero stock-photo collages**: No placeholder photography frames or camera icons on the public page. The hero features an interactive vector **Path Compass** and geometric SVG accents.
-- **Zero invented metrics or false claims**: Removed claims of "7K+", "10K+", "95% success rate", "$260,000+ average award", "British Council partnership", fake reviews, fake ratings, or invented instructor names.
-- **No false guarantees**: The FAQ explicitly clarifies that university admissions committees and government consular offices retain exclusive authority over admissions, scholarships, and visa approvals.
-
----
-
-## 3. Labeled Placeholders
-
-Where real details are pending from Negus, they are marked with neutral placeholder tags:
-- `Price: to be confirmed` (for unpriced SAT, IELTS, and custom packages)
-- `Instructor: to be added`
-- `Format: details coming`
-- `Date: to be confirmed` (for educational blog post publishing dates)
-- `*Preview uses example data.*` (strictly attached to the 3-step methodology sample previews)
+## 2. Placeholders Remaining on the Live Site
+The following placeholders remain visible and neutral to avoid inventing claims:
+1. **Course Pricing & Details**:
+   - `Price: to be confirmed` (SAT Preparation Course, IELTS Preparation Course, Scholarship Training Course).
+   - `Details coming soon` (SAT Preparation Course, IELTS Preparation Course, Scholarship Training Course).
+2. **Package Bullet Inclusions**:
+   - `Details to be confirmed` (Mentorship & Guidance, Full Application Support, Additional Services).
+3. **Blog / Advisory Articles**:
+   - `Date: to be confirmed` (for all 3 articles by Abrham Sinshaw).
+   - Read times ("5 min read", etc.) have been completely removed.
+4. **Student Photography**:
+   - Initial-based typographic profile avatars (A, A, M, Y, L) used until authorized student photos are provided.
+5. **Form Placeholders**:
+   - Neutral examples used: `e.g. Full name` and `e.g. name@example.com`.
 
 ---
 
-## 4. Reference Sites (Structure Only)
-
-- `trytestr.com`: Provided structural inspiration for the interactive Path Finder decision wizard and clear category filtering.
-- `ohubet.com`: Provided architectural inspiration for clean institutional typography and high-contrast step sequencing.
-- **Rule**: Neither site's copy, statistics, claims, partnerships, or atmospheric imagery were borrowed.
-
----
-
-## 5. Outstanding Questions for Negus Consultants
-
-1. **High-Resolution Photography**: When real team, classroom, or consented student photos become available, what aspect ratio and focal points are preferred for integration into the brand system?
-2. **Standardized Test Cohort Details**: What are the official start dates, durations, and pricing structures for the upcoming SAT and IELTS preparation cohorts?
-3. **Local Payment Gateways**: Which digital payment options (e.g., Telebirr, CBE Birr, Awash Birr, direct bank transfer) should be integrated into the online checkout for the 2,000 Birr Essay Writing Package?
-4. **Social Links**: Confirm whether additional official channels (LinkedIn, Facebook) should be integrated alongside Telegram, Instagram, TikTok, and YouTube.
+## 3. Open Questions for the Client
+1. **Real Course Details, Schedules & Pricing**:
+   - What are the upcoming start dates, curriculum schedules, and exact tuition fees for the SAT Preparation Course, IELTS Preparation Course, and Scholarship Training Course?
+2. **Package Deliverables & Scope**:
+   - What specific deliverables, revision counts, and support channels are included in Mentorship & Guidance, Full Application Support, and Additional Services?
+3. **Student Photos & Testimonials**:
+   - Are authorized headshot photos and written testimonial quotes available for Abrham, Ahmed, Melat, Yohannes, and Leulseged?
+4. **Primary Telegram Channel & Support Desk**:
+   - Should public consultation inquiries direct to `@Negushelpcenter` (one-on-one desk) or `https://t.me/NEGUSCONSULTANTS` (community channel), or keep both distinguished as they currently are?
+5. **Response Time SLA**:
+   - What is the typical turnaround or response time for submitted consultation forms (e.g. 24 hours / same business day)?

@@ -176,7 +176,7 @@
         } else if (finderGoal === 'scholarships') {
           showFinderResult('General Scholarship Training', 'Comprehensive flagship roadmap for students seeking fully funded international university scholarships across 4 phases.', delivery === 'online' ? 'Online Sessions' : 'Online & In-person options', 'Price: Details to be confirmed', '#scholarship-training');
         } else {
-          showFinderResult('Full Application Support', 'Complete end-to-end guidance from college selection and essay editing to financial aid documentation and visa preparation.', 'Online & In-Person', 'Consultation based', '#packages-section');
+          showFinderResult('Full Application Support', 'Complete end-to-end guidance from college selection and essay editing to financial aid documentation and visa preparation.', 'Online & In-Person', 'Price: to be confirmed', '#packages-section');
         }
       }, 180);
     }
@@ -529,7 +529,7 @@
     }
 
     function handleForgotPassword() {
-      const email = prompt('Enter your registered email to reset your password:', 'melat@example.com');
+      const email = prompt('Enter your registered email to reset your password:', 'name@example.com');
       if (email) {
         alert('Password reset instructions have been dispatched to ' + email);
       }

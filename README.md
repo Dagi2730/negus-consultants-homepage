@@ -1,6 +1,6 @@
 # Negus Consultants Homepage
 
-Clean, type-led, and vector-designed homepage and student consultation platform for **Negus Consultants** — guiding Ethiopian scholars toward fully funded international university admissions and merit scholarships.
+Clean, type-led, and vector-designed homepage and student consultation platform for **Negus Consultants** — guiding Ethiopian scholars toward fully funded international university admissions and scholarships.
 
 ---
 
