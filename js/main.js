@@ -204,6 +204,7 @@
     }
 
     function resetFinder() {
+      if (window.lucide) lucide.createIcons();
       prevFinderStep(1);
       const allBtns = document.querySelectorAll('.finder-option-btn');
       allBtns.forEach(b => b.classList.remove('selected'));
@@ -575,3 +576,17 @@
       sectionsToWatch.forEach(sec => observer.observe(sec));
     });
 
+
+
+    // Keyboard Accessibility (Escape Key to close modals and mobile nav)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' || e.keyCode === 27) {
+        closeAuthModal();
+        const panel = document.getElementById('mobile-nav-panel');
+        const btn = document.getElementById('mobile-menu-toggle');
+        if (panel && panel.classList.contains('open')) {
+          panel.classList.remove('open');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });

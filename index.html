@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/sections.css">
 </head>
 <body>
+  <a href="#hero" class="skip-to-content">Skip to main content</a>
 
   <!-- ====================================================
        1. NAVIGATION HEADER (Logo in Far Left Corner)
@@ -707,7 +708,10 @@
         <div class="finder-wizard-card" id="view-finder-wizard" style="display: none;">
           <div class="finder-step-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
             <span class="tag-program" id="finder-step-indicator">STEP 1 OF 2</span>
-            <button onclick="resetFinder()" class="btn-text-link" style="font-size: 13px; text-decoration: none; border-bottom: none;">Start over</button>
+            <button type="button" onclick="resetFinder()" class="btn-start-over" id="btn-finder-start-over" aria-label="Start over path finder">
+              <i data-lucide="rotate-ccw" style="width: 14px; height: 14px;"></i>
+              <span>Start over</span>
+            </button>
           </div>
 
           <!-- Step 1: Primary Goal -->

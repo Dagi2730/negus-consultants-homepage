@@ -1114,8 +1114,8 @@
     }
 
     .social-btn {
-      width: 38px;
-      height: 38px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       background-color: var(--green-50);
       border: 1px solid var(--line);
@@ -1130,3 +1130,108 @@
       background-color: var(--yellow-400);
     }
 
+
+
+/* ====================================================
+   TABLET & MOBILE ACCESSIBILITY REFINEMENTS
+   ==================================================== */
+
+/* Tablet (768px to 1023px) Responsive Grid Alignment */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  .hero-orbit-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px;
+  }
+  
+  .direct-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .finder-options-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .universities-showcase-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  .sat-split-card {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+  
+  .orbital-split-layout {
+    grid-template-columns: 1fr !important;
+    gap: 36px;
+  }
+  
+  .orbital-graphic-col {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Screens (Under 768px) */
+@media (max-width: 767px) {
+  .hero-headline {
+    font-size: 34px !important;
+    line-height: 1.15;
+  }
+  
+  .hero-subline {
+    font-size: 16px !important;
+  }
+  
+  .hero-orbit-wrap {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .orbital-container {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .universities-showcase-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+  
+  .direct-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .finder-options-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .stepper-nav-bar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+  }
+  
+  .stepper-step-btn {
+    flex-shrink: 0;
+  }
+}

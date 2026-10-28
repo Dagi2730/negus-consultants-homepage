@@ -696,3 +696,120 @@
       color: var(--ink-900);
     }
 
+
+
+/* ====================================================
+   ACCESSIBILITY & RESPONSIVENESS (Laptop, Tablet, Phone)
+   ==================================================== */
+
+/* Skip to Content for Keyboard & Screen Reader Users */
+.skip-to-content {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  background-color: var(--yellow-400);
+  color: var(--ink-900);
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: var(--radius-md);
+  z-index: 10000;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: top 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skip-to-content:focus {
+  top: 16px;
+  outline: 2px solid var(--ink-900);
+  outline-offset: 2px;
+}
+
+/* Proper Button for Start Over (Path Finder) */
+.btn-start-over {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-900);
+  background-color: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  min-height: 40px;
+  box-shadow: 0 1px 3px rgba(25, 35, 26, 0.05);
+  transition: all var(--transition-fast);
+}
+
+.btn-start-over:hover {
+  background-color: var(--green-50);
+  border-color: var(--green-300);
+  color: var(--green-600);
+}
+
+.btn-start-over:active {
+  transform: translateY(1px);
+}
+
+.btn-start-over:focus-visible {
+  outline: 2px solid var(--ink-900);
+  outline-offset: 2px;
+}
+
+html.dark .btn-start-over {
+  background-color: var(--green-100);
+  border-color: var(--line);
+  color: var(--ink-900);
+}
+
+html.dark .btn-start-over:hover {
+  background-color: var(--green-50);
+  border-color: var(--green-300);
+  color: var(--green-600);
+}
+
+html.dark .btn-start-over:focus-visible {
+  outline: 2px solid var(--yellow-400);
+  outline-offset: 2px;
+}
+
+/* Universal Touch-Target & Input Accessibility */
+button,
+a.btn-primary,
+a.btn-secondary,
+a.btn-outline-green,
+.filter-chip,
+.audience-toggle-btn {
+  min-height: 44px;
+}
+
+.theme-toggle-btn {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Controls: prevent iOS auto-zoom with min 16px font-size */
+.form-input,
+.form-select,
+.form-textarea,
+.portal-field-input {
+  font-size: 16px !important;
+  min-height: 48px;
+}
+
+/* Focus Visible Across All Interactive Controls */
+:focus-visible {
+  outline: 2px solid var(--ink-900) !important;
+  outline-offset: 2px !important;
+}
+
+html.dark :focus-visible {
+  outline: 2px solid var(--yellow-400) !important;
+  outline-offset: 2px !important;
+}
